@@ -1,0 +1,3060 @@
+<html lang="es"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JACKETS MASTER - Equipamiento Motociclista Premium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton:ital,wght@0,400;1,400&amp;family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&amp;family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&amp;family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&amp;family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&amp;display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" id="favicon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='favGrad' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23dc2626;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23991b1b;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' fill='%23000'/%3E%3Cpath d='M10 75 L25 45 L35 55 L50 35 L65 50 L75 30 L90 45 L90 75 Z' fill='url(%23favGrad)'/%3E%3Cpath d='M10 75 L20 70 L30 72 L40 68 L50 70 L60 67 L70 69 L80 66 L90 68 L90 75 Z' fill='%23374151' opacity='0.7'/%3E%3Ctext x='50' y='55' text-anchor='middle' font-family='Arial Black' font-size='24' font-weight='bold' fill='white' stroke='%23000' stroke-width='1'%3EJM%3C/text%3E%3Ctext x='50' y='85' text-anchor='middle' font-family='Arial' font-size='8' fill='%23dc2626' font-weight='bold'%3EYOSES%3C/text%3E%3C/svg%3E">
+    
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+
+        /* Brand Identity - Sello Distintivo */
+        .brand-title {
+            font-family: 'Anton', sans-serif !important;
+            font-style: italic !important;
+            color: #dc2626 !important;
+            text-shadow: 4px 4px 0px #000000 !important;
+            letter-spacing: 3px !important;
+            font-weight: 400 !important;
+        }
+
+        .brand-subtitle {
+            font-family: 'Anton', sans-serif !important;
+            color: #ffffff !important;
+            text-shadow: 2px 2px 0px #000000 !important;
+            letter-spacing: 1px !important;
+        }
+
+        /* Background Gradients */
+        .bg-brand-gradient {
+            background: linear-gradient(135deg, #000000 0%, #1f1f1f 50%, #000000 100%);
+        }
+
+        .bg-red-gradient {
+            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+        }
+
+        .bg-dark-gradient {
+            background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+        }
+
+        
+        .admin-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.98);
+            z-index: 9999;
+            display: none;
+            overflow-y: auto;
+        }
+
+        .admin-overlay.active {
+            display: block;
+        }
+
+        .admin-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+            color: white;
+        }
+
+        .admin-header {
+            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(220, 38, 38, 0.3);
+        }
+
+        .admin-tabs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .admin-tab {
+            padding: 20px 15px;
+            background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+            border: 2px solid transparent;
+            color: #9ca3af;
+            cursor: pointer;
+            border-radius: 16px;
+            text-align: center;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .admin-tab::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+            transition: left 0.5s;
+        }
+
+        .admin-tab:hover::before {
+            left: 100%;
+        }
+
+        .admin-tab:hover {
+            border-color: #dc2626;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(220, 38, 38, 0.2);
+        }
+
+        .admin-tab.active {
+            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+            color: white;
+            border-color: #dc2626;
+            box-shadow: 0 10px 30px rgba(220, 38, 38, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .admin-content {
+            display: none;
+            animation: fadeInUp 0.4s ease;
+        }
+
+        .admin-content.active {
+            display: block;
+        }
+
+        @keyframes fadeInUp {
+            from { 
+                opacity: 0; 
+                transform: translateY(30px); 
+            }
+            to { 
+                opacity: 1; 
+                transform: translateY(0); 
+            }
+        }
+
+        .admin-card {
+            background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 25px;
+            border: 1px solid #4b5563;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .admin-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #dc2626, #f59e0b, #10b981, #3b82f6, #8b5cf6, #dc2626);
+            background-size: 200% 100%;
+            animation: shimmer 3s linear infinite;
+        }
+
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+
+        .admin-card h4 {
+            color: #fbbf24;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #e5e7eb;
+            font-size: 14px;
+        }
+
+        .form-input, .form-select, .form-textarea {
+            width: 100%;
+            padding: 14px 18px;
+            background: #374151;
+            color: white;
+            border: 2px solid #4b5563;
+            border-radius: 12px;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .form-input:focus, .form-select:focus, .form-textarea:focus {
+            outline: none;
+            border-color: #dc2626;
+            box-shadow: 0 0 0 4px rgba(220, 38, 38, 0.1);
+            background: #4b5563;
+        }
+
+        /* Button Styles */
+        .btn-admin {
+            border: none;
+            padding: 14px 24px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            margin: 4px;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-admin::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.3s, height 0.3s;
+        }
+
+        .btn-admin:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .btn-admin:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-admin.primary {
+            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+            color: white;
+        }
+
+        .btn-admin.success {
+            background: linear-gradient(135deg, #059669 0%, #047857 100%);
+            color: white;
+        }
+
+        .btn-admin.warning {
+            background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+            color: white;
+        }
+
+        .btn-admin.info {
+            background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+            color: white;
+        }
+
+        .btn-admin.secondary {
+            background: linear-gradient(135deg, #374151 0%, #4b5563 100%);
+            color: white;
+        }
+
+        .btn-admin.danger {
+            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+            color: white;
+        }
+
+        /* Status Indicators */
+        .status-active {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .status-inactive {
+            background: linear-gradient(135deg, #6b7280 0%, #4b5563 100%);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        /* Notifications */
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 18px 28px;
+            border-radius: 16px;
+            color: white;
+            font-weight: 600;
+            z-index: 10000;
+            transform: translateX(400px);
+            transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .notification.show {
+            transform: translateX(0);
+        }
+
+        .notification.success {
+            background: linear-gradient(135deg, #059669 0%, #047857 100%);
+        }
+
+        .notification.error {
+            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+        }
+
+        .notification.warning {
+            background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+        }
+
+        /* Image Upload */
+        .image-upload-area {
+            border: 3px dashed #4b5563;
+            border-radius: 16px;
+            padding: 40px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+        }
+
+        .image-upload-area:hover {
+            border-color: #dc2626;
+            background: linear-gradient(135deg, #374151 0%, #4b5563 100%);
+            transform: scale(1.02);
+        }
+
+        .image-upload-area.dragover {
+            border-color: #dc2626;
+            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+            transform: scale(1.05);
+        }
+
+        /* Stats Dashboard */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+            padding: 25px;
+            border-radius: 20px;
+            text-align: center;
+            border: 1px solid #4b5563;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #dc2626, #f59e0b);
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #dc2626;
+            margin-bottom: 8px;
+            font-family: 'Anton', sans-serif;
+        }
+
+        .stat-label {
+            color: #9ca3af;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Product Cards */
+        .product-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 2px solid transparent;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 25px 50px rgba(220, 38, 38, 0.2);
+            border-color: #dc2626;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover .product-image {
+            transform: scale(1.1);
+        }
+
+        /* Login Form */
+        .login-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.95);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10000;
+            backdrop-filter: blur(10px);
+        }
+
+        .login-form {
+            background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+            padding: 50px;
+            border-radius: 25px;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+            border: 3px solid #dc2626;
+            max-width: 450px;
+            width: 90%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .login-form::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #dc2626, #f59e0b, #10b981, #3b82f6);
+            background-size: 200% 100%;
+            animation: shimmer 2s linear infinite;
+        }
+
+
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .admin-container {
+                padding: 15px;
+            }
+            
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .admin-tabs {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .brand-title {
+                font-size: 2rem !important;
+            }
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #1f2937;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(135deg, #b91c1c 0%, #991b1b 100%);
+        }
+
+        /* Price Range Slider Styles */
+        .slider-thumb-red {
+            background: transparent;
+        }
+
+        .slider-thumb-red::-webkit-slider-thumb {
+            appearance: none;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+            cursor: pointer;
+            border: 2px solid #ffffff;
+            box-shadow: 0 2px 6px rgba(220, 38, 38, 0.3);
+            position: relative;
+            z-index: 2;
+        }
+
+        .slider-thumb-red::-webkit-slider-thumb:hover {
+            background: linear-gradient(135deg, #b91c1c 0%, #991b1b 100%);
+            transform: scale(1.1);
+        }
+
+        .slider-thumb-red::-moz-range-thumb {
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+            cursor: pointer;
+            border: 2px solid #ffffff;
+            box-shadow: 0 2px 6px rgba(220, 38, 38, 0.3);
+        }
+
+        .slider-thumb-red::-webkit-slider-track {
+            background: #e5e7eb;
+            height: 8px;
+            border-radius: 4px;
+        }
+
+        .slider-thumb-red::-moz-range-track {
+            background: #e5e7eb;
+            height: 8px;
+            border-radius: 4px;
+        }
+
+        #minPriceRange {
+            z-index: 1;
+        }
+
+        #maxPriceRange {
+            z-index: 2;
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.container{width:100%}@media (min-width: 640px){.container{max-width:640px}}@media (min-width: 768px){.container{max-width:768px}}@media (min-width: 1024px){.container{max-width:1024px}}@media (min-width: 1280px){.container{max-width:1280px}}@media (min-width: 1536px){.container{max-width:1536px}}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0px}.top-0{top:0px}.left-3{left:0.75rem}.top-3{top:0.75rem}.z-10{z-index:10}.z-30{z-index:30}.mx-auto{margin-left:auto;margin-right:auto}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mr-2{margin-right:0.5rem}.mr-3{margin-right:0.75rem}.mt-2{margin-top:0.5rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.mt-8{margin-top:2rem}.mt-1{margin-top:0.25rem}.line-clamp-2{overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2}.line-clamp-3{overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-12{height:3rem}.h-14{height:3.5rem}.h-16{height:4rem}.h-2{height:0.5rem}.h-20{height:5rem}.h-5{height:1.25rem}.h-8{height:2rem}.max-h-80{max-height:20rem}.max-h-96{max-height:24rem}.w-12{width:3rem}.w-14{width:3.5rem}.w-16{width:4rem}.w-20{width:5rem}.w-5{width:1.25rem}.w-8{width:2rem}.w-full{width:100%}.max-w-3xl{max-width:48rem}.max-w-5xl{max-width:64rem}.flex-1{flex:1 1 0%}.cursor-pointer{cursor:pointer}.appearance-none{-webkit-appearance:none;appearance:none}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-wrap{flex-wrap:wrap}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.gap-1{gap:0.25rem}.space-x-3 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.75rem * var(--tw-space-x-reverse));margin-left:calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-4 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1rem * var(--tw-space-x-reverse));margin-left:calc(1rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-6 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1.5rem * var(--tw-space-x-reverse));margin-left:calc(1.5rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-8 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(2rem * var(--tw-space-x-reverse));margin-left:calc(2rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-8 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(2rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(2rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.rounded{border-radius:0.25rem}.border{border-width:1px}.border-2{border-width:2px}.border-gray-200{--tw-border-opacity:1;border-color:rgb(229 231 235 / var(--tw-border-opacity, 1))}.border-gray-400{--tw-border-opacity:1;border-color:rgb(156 163 175 / var(--tw-border-opacity, 1))}.border-gray-600{--tw-border-opacity:1;border-color:rgb(75 85 99 / var(--tw-border-opacity, 1))}.border-yellow-600{--tw-border-opacity:1;border-color:rgb(202 138 4 / var(--tw-border-opacity, 1))}.bg-black{--tw-bg-opacity:1;background-color:rgb(0 0 0 / var(--tw-bg-opacity, 1))}.bg-blue-600{--tw-bg-opacity:1;background-color:rgb(37 99 235 / var(--tw-bg-opacity, 1))}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.bg-gray-200{--tw-bg-opacity:1;background-color:rgb(229 231 235 / var(--tw-bg-opacity, 1))}.bg-gray-600{--tw-bg-opacity:1;background-color:rgb(75 85 99 / var(--tw-bg-opacity, 1))}.bg-gray-800{--tw-bg-opacity:1;background-color:rgb(31 41 55 / var(--tw-bg-opacity, 1))}.bg-green-600{--tw-bg-opacity:1;background-color:rgb(22 163 74 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-yellow-900{--tw-bg-opacity:1;background-color:rgb(113 63 18 / var(--tw-bg-opacity, 1))}.bg-opacity-50{--tw-bg-opacity:0.5}.bg-opacity-95{--tw-bg-opacity:0.95}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-red-900\/20{--tw-gradient-from:rgb(127 29 29 / 0.2) var(--tw-gradient-from-position);--tw-gradient-to:rgb(127 29 29 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.to-transparent{--tw-gradient-to:transparent var(--tw-gradient-to-position)}.object-cover{object-fit:cover}.p-3{padding:0.75rem}.p-6{padding:1.5rem}.px-12{padding-left:3rem;padding-right:3rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-8{padding-left:2rem;padding-right:2rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-8{padding-top:2rem;padding-bottom:2rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.text-center{text-align:center}.text-right{text-align:right}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.text-gray-300{--tw-text-opacity:1;color:rgb(209 213 219 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity, 1))}.text-gray-800{--tw-text-opacity:1;color:rgb(31 41 55 / var(--tw-text-opacity, 1))}.text-green-400{--tw-text-opacity:1;color:rgb(74 222 128 / var(--tw-text-opacity, 1))}.text-red-200{--tw-text-opacity:1;color:rgb(254 202 202 / var(--tw-text-opacity, 1))}.text-red-400{--tw-text-opacity:1;color:rgb(248 113 113 / var(--tw-text-opacity, 1))}.text-red-500{--tw-text-opacity:1;color:rgb(239 68 68 / var(--tw-text-opacity, 1))}.text-red-600{--tw-text-opacity:1;color:rgb(220 38 38 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-yellow-300{--tw-text-opacity:1;color:rgb(253 224 71 / var(--tw-text-opacity, 1))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.hover\:scale-105:hover{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:border-red-500:hover{--tw-border-opacity:1;border-color:rgb(239 68 68 / var(--tw-border-opacity, 1))}.hover\:bg-gray-700:hover{--tw-bg-opacity:1;background-color:rgb(55 65 81 / var(--tw-bg-opacity, 1))}.hover\:text-red-400:hover{--tw-text-opacity:1;color:rgb(248 113 113 / var(--tw-text-opacity, 1))}.hover\:text-red-800:hover{--tw-text-opacity:1;color:rgb(153 27 27 / var(--tw-text-opacity, 1))}.hover\:shadow-xl:hover{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-red-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(239 68 68 / var(--tw-ring-opacity, 1))}@media (min-width: 768px){.md\:flex{display:flex}.md\:hidden{display:none}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.md\:grid-cols-5{grid-template-columns:repeat(5, minmax(0, 1fr))}.md\:text-7xl{font-size:4.5rem;line-height:1}}@media (min-width: 1024px){.lg\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}}@media (min-width: 1280px){.xl\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}}</style><style id="customStyles">
+                body { background: #000000 !important; }
+                #mainHeader { background: #000000 !important; }
+                #inicio { background: #1f1f1f !important; }
+                #productos { background: #f3f4f6 !important; }
+                #brandsSection { background: #000000 !important; }
+                #mainFooter { background: #000000 !important; }
+                .brand-title { color: #dc2626 !important; }
+                .text-white { color: #ffffff !important; }
+                a { color: #dc2626 !important; }
+                .bg-red-gradient { background: linear-gradient(135deg, #dc2626 0%, #dc2626dd 100%) !important; }
+            </style></head>
+<body class="bg-brand-gradient" id="mainBody">
+
+
+    <!-- Login Overlay - COMPLETAMENTE OCULTO POR DEFECTO -->
+    
+            <form id="loginForm">
+                <div class="form-group">
+                    <label class="form-label">Usuario</label>
+                    <input type="text" id="loginUser" class="form-input" required="" placeholder="Ingresa tu usuario">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Contraseña</label>
+                    <input type="password" id="loginPassword" class="form-input" required="" placeholder="Ingresa tu contraseña">
+                </div>
+                <button type="submit" class="btn-admin primary w-full text-lg">
+                    <i class="fas fa-sign-in-alt"></i>Iniciar Sesión
+                </button>
+            </form>
+            <div id="loginError" class="text-red-400 text-sm mt-4 text-center" style="display: none;"></div>
+        </div>
+    </div>
+
+    <!-- Admin Panel Overlay - COMPLETAMENTE OCULTO POR DEFECTO -->
+    
+                    <div class="flex items-center gap-6">
+                        <div class="text-right text-sm text-red-200">
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-circle text-green-400 text-xs"></i>
+                                <span>Sesión Activa</span>
+                            </div>
+                            <div id="sessionTimer" class="font-mono">Tiempo: 28:23</div>
+                        </div>
+                        <button onclick="closeAdminPanel()" class="btn-admin danger text-lg">
+                            <i class="fas fa-times"></i>Cerrar Panel
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Dashboard -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" id="totalProducts">1</div>
+                    <div class="stat-label">Total Productos</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="totalCategories">9</div>
+                    <div class="stat-label">Categorías</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="totalBrands">4</div>
+                    <div class="stat-label">Marcas</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="totalClicks">0</div>
+                    <div class="stat-label">Clics WhatsApp</div>
+                </div>
+            </div>
+
+            <!-- Admin Tabs -->
+            <div class="admin-tabs">
+                <button class="admin-tab" onclick="switchTab('dashboard')">
+                    <i class="fas fa-chart-line text-2xl mb-3"></i><br>
+                    <span class="font-bold">Dashboard</span>
+                </button>
+                <button class="admin-tab" onclick="switchTab('products')">
+                    <i class="fas fa-box text-2xl mb-3"></i><br>
+                    <span class="font-bold">Productos</span>
+                </button>
+                <button class="admin-tab" onclick="switchTab('categories')">
+                    <i class="fas fa-tags text-2xl mb-3"></i><br>
+                    <span class="font-bold">Categorías</span>
+                </button>
+                <button class="admin-tab" onclick="switchTab('brands')">
+                    <i class="fas fa-award text-2xl mb-3"></i><br>
+                    <span class="font-bold">Marcas</span>
+                </button>
+                <button class="admin-tab" onclick="switchTab('design')">
+                    <i class="fas fa-palette text-2xl mb-3"></i><br>
+                    <span class="font-bold">Diseño</span>
+                </button>
+                <button class="admin-tab" onclick="switchTab('buttons')">
+                    <i class="fas fa-mouse-pointer text-2xl mb-3"></i><br>
+                    <span class="font-bold">Botones</span>
+                </button>
+                <button class="admin-tab" onclick="switchTab('logos')">
+                    <i class="fas fa-image text-2xl mb-3"></i><br>
+                    <span class="font-bold">Logos</span>
+                </button>
+                <button class="admin-tab active" onclick="switchTab('export')">
+                    <i class="fas fa-download text-2xl mb-3"></i><br>
+                    <span class="font-bold">Exportar</span>
+                </button>
+            </div>
+
+            <!-- Dashboard Tab -->
+            <div id="dashboardTab" class="admin-content">
+                <div class="admin-card">
+                    <h4><i class="fas fa-chart-pie"></i>Análisis de Rendimiento</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h5 class="text-white font-semibold mb-4 text-lg">Productos Más Consultados</h5>
+                            <div id="topProducts" class="space-y-3">
+                                <!-- Top products will be loaded here -->
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="text-white font-semibold mb-4 text-lg">Categorías Populares</h5>
+                            <div id="topCategories" class="space-y-3">
+                                <!-- Top categories will be loaded here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="admin-card">
+                    <h4><i class="fas fa-history"></i>Actividad Reciente</h4>
+                    <div id="recentActivity" class="space-y-3">
+                        <!-- Recent activity will be loaded here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products Tab -->
+            <div id="productsTab" class="admin-content">
+                <div class="admin-card">
+                    <h4><i class="fas fa-plus-circle"></i>Agregar/Editar Producto</h4>
+                    <form id="productForm">
+                        <input type="hidden" id="editProductId">
+                        
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label class="form-label">Nombre del Producto</label>
+                                <input type="text" id="productName" class="form-input" required="" placeholder="Ej: Chaqueta Cortech Adrenaline">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label">Precio (₡)</label>
+                                <input type="number" id="productPrice" class="form-input" required="" placeholder="250000">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label">Categoría</label>
+                                <select id="productCategory" class="form-select" required=""><option value="">Seleccionar categoría</option><option value="chaquetas">Jackets</option><option value="guantes">Guantes</option><option value="pantalones">Pantalones</option><option value="cascos">Cascos</option><option value="botas">Botas</option><option value="rodilleras">Rodilleras</option><option value="protecciones">Protecciones</option><option value="maletines">Maletines</option><option value="otros">Otros</option></select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label">Marca</label>
+                                <select id="productBrand" class="form-select" required=""><option value="">Seleccionar marca</option><option value="cortech">CORTECH</option><option value="tourmaster">TOURMASTER</option><option value="joerocket">JOE ROCKET</option><option value="noru">NORU</option></select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label">Tallas Disponibles</label>
+                                <input type="text" id="productSizes" class="form-input" placeholder="S,M,L,XL,XXL" required="">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Estado</label>
+                                <select id="productStatus" class="form-select">
+                                    <option value="active">Activo</option>
+                                    <option value="inactive">Inactivo</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Descripción Detallada</label>
+                            <textarea id="productDescription" class="form-textarea" rows="4" required="" placeholder="Descripción completa del producto, características, materiales, etc."></textarea>
+                        </div>
+                        
+                        <!-- Image Upload Section -->
+                        <div class="form-group">
+                            <label class="form-label">Imágenes del Producto</label>
+                            <div class="image-upload-area" id="imageUploadArea">
+                                <i class="fas fa-cloud-upload-alt text-5xl text-gray-400 mb-4"></i>
+                                <p class="text-gray-300 mb-3 text-lg font-semibold">Arrastra imágenes aquí o haz clic para seleccionar</p>
+                                <p class="text-sm text-gray-400">Soporta: JPG, PNG, WebP (máx. 5MB cada una)</p>
+                                <input type="file" id="imageFiles" multiple="" accept="image/*" style="display: none;">
+                            </div>
+                            
+                            <div class="mt-6">
+                                <label class="form-label">O agregar URL de imagen</label>
+                                <div class="flex gap-3">
+                                    <input type="url" id="imageUrl" class="form-input" placeholder="https://ejemplo.com/imagen.jpg">
+                                    <button type="button" onclick="addImageUrl()" class="btn-admin success">
+                                        <i class="fas fa-plus"></i>Agregar URL
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div id="imagePreview" class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6"></div>
+                        </div>
+                        
+                        <div class="flex gap-4 mt-8">
+                            <button type="submit" class="btn-admin success flex-1 text-lg">
+                                <i class="fas fa-save"></i>Guardar Producto
+                            </button>
+                            <button type="button" onclick="cancelProductEdit()" class="btn-admin secondary">
+                                <i class="fas fa-times"></i>Cancelar
+                            </button>
+                            <button type="button" onclick="clearProductForm()" class="btn-admin warning">
+                                <i class="fas fa-broom"></i>Limpiar Formulario
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Product Templates -->
+                <div class="admin-card">
+                    <h4><i class="fas fa-copy"></i>Plantillas Rápidas de Productos</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <button onclick="createTemplate('jacket')" class="btn-admin info">
+                            <i class="fas fa-tshirt"></i>Plantilla Chaqueta
+                        </button>
+                        <button onclick="createTemplate('gloves')" class="btn-admin info">
+                            <i class="fas fa-hand-paper"></i>Plantilla Guantes
+                        </button>
+                        <button onclick="createTemplate('helmet')" class="btn-admin info">
+                            <i class="fas fa-hard-hat"></i>Plantilla Casco
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Products List -->
+                <div class="admin-card">
+                    <h4><i class="fas fa-list"></i>Lista de Productos (<span id="productCount">9</span>)</h4>
+                    
+                    <!-- Bulk Actions -->
+                    <div class="flex flex-wrap gap-3 mb-6">
+                        <button onclick="selectAllProducts()" class="btn-admin secondary">
+                            <i class="fas fa-check-square"></i>Seleccionar Todo
+                        </button>
+                        <button onclick="bulkActivate()" class="btn-admin success">
+                            <i class="fas fa-eye"></i>Activar Seleccionados
+                        </button>
+                        <button onclick="bulkDeactivate()" class="btn-admin warning">
+                            <i class="fas fa-eye-slash"></i>Desactivar Seleccionados
+                        </button>
+                        <button onclick="bulkDelete()" class="btn-admin danger">
+                            <i class="fas fa-trash"></i>Eliminar Seleccionados
+                        </button>
+                    </div>
+                    
+                    <div id="adminProductList" class="space-y-4 max-h-96 overflow-y-auto">
+                        <!-- Products will be listed here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categories Tab -->
+            <div id="categoriesTab" class="admin-content">
+                <div class="admin-card">
+                    <h4><i class="fas fa-plus-circle"></i>Gestión de Categorías</h4>
+                    
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
+                            <h5 class="text-white font-semibold mb-4 text-lg">Agregar Nueva Categoría</h5>
+                            <form id="categoryForm">
+                                <div class="form-group">
+                                    <label class="form-label">ID de la Categoría</label>
+                                    <input type="text" id="categoryId" class="form-input" placeholder="ej: nuevacategoria" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Nombre de la Categoría</label>
+                                    <input type="text" id="categoryName" class="form-input" placeholder="ej: Nueva Categoría" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Icono (Font Awesome)</label>
+                                    <input type="text" id="categoryIcon" class="form-input" placeholder="ej: fas fa-motorcycle">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Estado</label>
+                                    <select id="categoryStatus" class="form-select">
+                                        <option value="active">Activa</option>
+                                        <option value="inactive">Inactiva</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn-admin success w-full">
+                                    <i class="fas fa-plus"></i>Agregar Categoría
+                                </button>
+                            </form>
+                        </div>
+                        
+                        <div>
+                            <h5 class="text-white font-semibold mb-4 text-lg">Categorías Existentes</h5>
+                            <div id="categoriesList" class="space-y-3 max-h-80 overflow-y-auto">
+                                <!-- Categories will be listed here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Brands Tab -->
+            <div id="brandsTab" class="admin-content">
+                <div class="admin-card">
+                    <h4><i class="fas fa-plus-circle"></i>Gestión de Marcas</h4>
+                    
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div>
+                            <h5 class="text-white font-semibold mb-4 text-lg">Agregar Nueva Marca</h5>
+                            <form id="brandForm">
+                                <div class="form-group">
+                                    <label class="form-label">ID de la Marca</label>
+                                    <input type="text" id="brandId" class="form-input" placeholder="ej: nuevamarca" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Nombre de la Marca</label>
+                                    <input type="text" id="brandName" class="form-input" placeholder="ej: Nueva Marca" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">URL del Sitio Web</label>
+                                    <input type="url" id="brandUrl" class="form-input" placeholder="https://nuevamarca.com">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Logo de la Marca (URL)</label>
+                                    <input type="url" id="brandImage" class="form-input" placeholder="URL del logo">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Estado</label>
+                                    <select id="brandStatus" class="form-select">
+                                        <option value="active">Activa</option>
+                                        <option value="inactive">Inactiva</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn-admin success w-full">
+                                    <i class="fas fa-plus"></i>Agregar Marca
+                                </button>
+                            </form>
+                        </div>
+                        
+                        <div>
+                            <h5 class="text-white font-semibold mb-4 text-lg">Marcas Existentes</h5>
+                            <div id="brandsList" class="space-y-4 max-h-80 overflow-y-auto">
+                                <!-- Brands will be listed here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Design Tab -->
+            <div id="designTab" class="admin-content">
+                <div class="admin-card">
+                    <h4><i class="fas fa-palette"></i>Personalización Visual</h4>
+                    <p class="text-gray-300 mb-6">Personaliza los colores y tipografía de tu sitio web</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h5 class="text-white font-semibold mb-4 text-lg">Colores de Fondo</h5>
+                            <div class="space-y-4">
+                                <div class="form-group">
+                                    <label class="form-label">Fondo Principal</label>
+                                    <input type="color" id="bodyBg" class="form-input h-12" value="#000000" onchange="updateStyles()">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Header</label>
+                                    <input type="color" id="headerBg" class="form-input h-12" value="#000000" onchange="updateStyles()">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Hero Section</label>
+                                    <input type="color" id="heroBg" class="form-input h-12" value="#1f1f1f" onchange="updateStyles()">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Sección Productos</label>
+                                    <input type="color" id="productsBg" class="form-input h-12" value="#f3f4f6" onchange="updateStyles()">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h5 class="text-white font-semibold mb-4 text-lg">Colores de Texto</h5>
+                            <div class="space-y-4">
+                                <div class="form-group">
+                                    <label class="form-label">Títulos Principales (Rojo Característico)</label>
+                                    <input type="color" id="titleColor" class="form-input h-12" value="#dc2626" onchange="updateStyles()">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Texto Normal</label>
+                                    <input type="color" id="textColor" class="form-input h-12" value="#ffffff" onchange="updateStyles()">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Enlaces</label>
+                                    <input type="color" id="linkColor" class="form-input h-12" value="#dc2626" onchange="updateStyles()">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Botones</label>
+                                    <input type="color" id="buttonColor" class="form-input h-12" value="#dc2626" onchange="updateStyles()">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <button onclick="resetToDefault()" class="btn-admin warning">
+                            <i class="fas fa-undo"></i>Restaurar Colores por Defecto
+                        </button>
+                        <button onclick="saveDesign()" class="btn-admin success">
+                            <i class="fas fa-save"></i>Guardar Diseño
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Buttons Tab -->
+            <div id="buttonsTab" class="admin-content">
+                <div class="admin-card">
+                    <h4><i class="fas fa-mouse-pointer"></i>Configuración de Botones y Enlaces</h4>
+                    
+                    <div class="space-y-8">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="form-group">
+                                <label class="form-label">Texto Botón Principal WhatsApp</label>
+                                <input type="text" id="mainWhatsappText" class="form-input" value="CONTACTANOS POR WHATSAPP" onchange="updateButtons()">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Número WhatsApp (sin +506)</label>
+                                <input type="text" id="whatsappNumber" class="form-input" value="88845533" onchange="updateButtons()">
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div class="form-group">
+                                <label class="form-label">Texto Botón Productos</label>
+                                <input type="text" id="productWhatsappText" class="form-input" value="CONSULTAR" onchange="updateButtons()">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Texto Botón Waze</label>
+                                <input type="text" id="wazeButtonText" class="form-input" value="ABRIR EN WAZE" onchange="updateButtons()">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">URL Waze</label>
+                                <input type="url" id="wazeUrl" class="form-input" value="https://waze.com/ul/hd1u0rps2s" onchange="updateButtons()">
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="form-group">
+                                <label class="form-label">Texto Canal Promociones</label>
+                                <input type="text" id="promoButtonText" class="form-input" value="CANAL PROMOS" onchange="updateButtons()">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">URL Canal Promociones</label>
+                                <input type="url" id="promoUrl" class="form-input" value="https://whatsapp.com/channel/0029VaAqJvs8feKtE8dJPv1h" onchange="updateButtons()">
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <button onclick="updateButtons()" class="btn-admin success text-lg">
+                                <i class="fas fa-save"></i>Guardar Configuración de Botones
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Logos Tab -->
+            <div id="logosTab" class="admin-content">
+                <div class="admin-card">
+                    <h4><i class="fas fa-image"></i>Configuración de Logos e Identidad</h4>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h5 class="text-white font-semibold mb-4 text-lg">Logo Principal</h5>
+                            <div class="form-group">
+                                <label class="form-label">Nombre de la Tienda</label>
+                                <input type="text" id="siteName" class="form-input" value="JACKETS MASTER" onchange="updateSiteInfo()">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Icono Principal (Font Awesome)</label>
+                                <input type="text" id="mainIcon" class="form-input" value="fas fa-motorcycle" onchange="updateSiteInfo()">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Subir Logo Personalizado</label>
+                                <input type="file" id="logoFile" class="form-input" accept="image/*" onchange="uploadLogo()">
+                            </div>
+                            <div id="logoPreview" class="mt-6 text-center">
+                                <div class="w-20 h-20 bg-red-gradient rounded-xl flex items-center justify-center mx-auto shadow-lg">
+                                    <i class="fas fa-motorcycle text-white text-2xl" id="currentIcon"></i>
+                                </div>
+                                <p class="text-gray-400 text-sm mt-2">Vista previa del logo</p>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h5 class="text-white font-semibold mb-4 text-lg">Favicon (Icono del Navegador)</h5>
+                            <div class="form-group">
+                                <label class="form-label">Subir Favicon (16x16 o 32x32 px)</label>
+                                <input type="file" id="faviconFile" class="form-input" accept="image/*" onchange="uploadFavicon()">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">O usar SVG personalizado</label>
+                                <textarea id="faviconSvg" class="form-textarea" rows="6" placeholder="Pega aquí el código SVG del favicon" onchange="updateFavicon()"></textarea>
+                            </div>
+                            <div id="faviconPreview" class="mt-6 text-center">
+                                <div class="w-12 h-12 border-2 border-gray-400 rounded-lg mx-auto bg-white flex items-center justify-center shadow-lg">
+                                    <img id="currentFavicon" src="" alt="Favicon actual" class="w-8 h-8">
+                                </div>
+                                <p class="text-gray-400 text-sm mt-2">Vista previa del favicon</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-8">
+                        <button onclick="saveLogos()" class="btn-admin success text-lg">
+                            <i class="fas fa-save"></i>Guardar Configuración de Logos
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Export Tab -->
+            <div id="exportTab" class="admin-content active">
+                <div class="admin-card">
+                    <h4><i class="fas fa-download"></i>Exportar para GitHub Pages</h4>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h5 class="text-white font-semibold mb-4 text-lg">Configuración del Repositorio</h5>
+                            <div class="form-group">
+                                <label class="form-label">Nombre del Repositorio</label>
+                                <input type="text" id="repoName" class="form-input" value="jackets-master-website" placeholder="nombre-del-repo">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Descripción</label>
+                                <textarea id="repoDescription" class="form-textarea" rows="3" placeholder="Descripción del proyecto">Sitio web de Jackets Master - Equipamiento motociclista premium en Los Yoses, Costa Rica</textarea>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Autor</label>
+                                <input type="text" id="authorName" class="form-input" value="Jackets Master" placeholder="Tu nombre">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h5 class="text-white font-semibold mb-4 text-lg">Opciones de Exportación</h5>
+                            <div class="space-y-4">
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="checkbox" id="includeReadme" checked="" class="w-5 h-5 text-red-600">
+                                    <span class="text-white">Incluir README.md</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="checkbox" id="includeGitignore" checked="" class="w-5 h-5 text-red-600">
+                                    <span class="text-white">Incluir .gitignore</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="checkbox" id="includeLicense" checked="" class="w-5 h-5 text-red-600">
+                                    <span class="text-white">Incluir LICENSE</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="checkbox" id="optimizeImages" checked="" class="w-5 h-5 text-red-600">
+                                    <span class="text-white">Optimizar imágenes</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 text-center">
+                        <button onclick="exportForGitHub()" class="btn-admin success text-xl px-12 py-4">
+                            <i class="fas fa-rocket"></i>Generar Archivos para GitHub
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Backup & Import -->
+                <div class="admin-card">
+                    <h4><i class="fas fa-database"></i>Respaldo e Importación de Datos</h4>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h5 class="text-white font-semibold mb-4 text-lg">Crear Respaldo</h5>
+                            <p class="text-gray-400 text-sm mb-6">Descarga todos tus datos en formato JSON para respaldo o migración.</p>
+                            <button onclick="createBackup()" class="btn-admin success w-full text-lg">
+                                <i class="fas fa-download"></i>Descargar Respaldo Completo
+                            </button>
+                        </div>
+                        
+                        <div>
+                            <h5 class="text-white font-semibold mb-4 text-lg">Importar Datos</h5>
+                            <p class="text-gray-400 text-sm mb-6">Restaura datos desde un archivo de respaldo.</p>
+                            <input type="file" id="importFile" accept=".json" class="form-input mb-4">
+                            <button onclick="importBackup()" class="btn-admin warning w-full text-lg">
+                                <i class="fas fa-upload"></i>Importar Respaldo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="mainHeader" class="bg-brand-gradient text-white shadow-2xl sticky top-0 z-30">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <div id="logoContainer" class="w-14 h-14 bg-red-gradient rounded-xl flex items-center justify-center shadow-lg">
+                        <i class="fas fa-motorcycle text-white text-2xl" id="headerIcon"></i>
+                    </div>
+                    <h1 id="siteTitleHeader" class="text-2xl font-bold brand-title">JACKETS MASTER</h1>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <nav class="hidden md:flex space-x-8">
+                        <a href="#inicio" class="hover:text-red-400 transition-colors font-bold text-lg brand-subtitle">INICIO</a>
+                        <a href="#productos" class="hover:text-red-400 transition-colors font-bold text-lg brand-subtitle">PRODUCTOS</a>
+                        <a href="#contacto" class="hover:text-red-400 transition-colors font-bold text-lg brand-subtitle">CONTACTO</a>
+                    </nav>
+                    <button onclick="showLogin()" class="hidden md:flex items-center gap-2 text-gray-400 hover:text-red-400 transition-colors bg-gray-800 bg-opacity-50 px-3 py-2 rounded-lg border border-gray-600 hover:border-red-500">
+                        <i class="fas fa-cog text-sm"></i>
+                        <span class="text-sm font-semibold">ADMIN</span>
+                    </button>
+                    <button class="md:hidden text-3xl" onclick="toggleMobileMenu()">
+                        <i class="fas fa-bars text-red-500"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden bg-black bg-opacity-95 text-white md:hidden">
+        <div class="container mx-auto px-4 py-4 space-y-4">
+            <a href="#inicio" class="block hover:text-red-400 text-xl font-bold brand-subtitle">INICIO</a>
+            <a href="#productos" class="block hover:text-red-400 text-xl font-bold brand-subtitle">PRODUCTOS</a>
+            <a href="#contacto" class="block hover:text-red-400 text-xl font-bold brand-subtitle">CONTACTO</a>
+            <button onclick="showLogin(); toggleMobileMenu();" class="flex items-center gap-3 text-gray-400 hover:text-red-400 transition-colors bg-gray-800 bg-opacity-50 px-4 py-3 rounded-lg border border-gray-600 hover:border-red-500 w-full">
+                <i class="fas fa-cog"></i>
+                <span class="font-bold text-lg brand-subtitle">PANEL ADMIN</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="bg-brand-gradient text-white py-8 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-red-900/20 to-transparent"></div>
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <div class="max-w-5xl mx-auto p-6 rounded-2xl">
+                <h2 id="heroTitle" class="text-5xl md:text-7xl mb-6 brand-title">EQUIPAMIENTO MOTOCICLISTA PREMIUM</h2>
+                <p id="heroDescription" class="text-xl mb-8 max-w-3xl mx-auto font-semibold brand-subtitle">Descubra nuestra colección de equipamiento motociclista de las mejores marcas: Cortech, TourMaster, Joe Rocket y Noru. Protección, estilo y durabilidad para los verdaderos riders de Los Yoses.</p>
+                <a href="https://wa.me/50688845533" target="_blank" rel="noopener noreferrer" id="heroButton" class="bg-red-gradient text-white px-8 py-4 rounded-xl text-xl font-bold inline-block shadow-2xl hover:scale-105 transition-all duration-300" onclick="trackClick('hero_whatsapp')">
+                    <i class="fas fa-whatsapp mr-3"></i><span id="heroButtonText">CONTACTANOS POR WHATSAPP</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="productos" class="py-8 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 id="productsTitle" class="text-5xl text-center mb-8 brand-title">NUESTROS PRODUCTOS</h2>
+            
+            <!-- Search and Filters -->
+            <div class="bg-white bg-opacity-95 p-6 rounded-2xl shadow-xl mb-8">
+                <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+                    <div>
+                        <label class="block font-bold mb-2 text-gray-800">BUSCAR:</label>
+                        <input type="text" id="searchInput" placeholder="Buscar productos..." class="w-full px-4 py-3 bg-white rounded-xl focus:outline-none focus:ring-2 focus:ring-red-500 border-2 border-gray-200" onkeyup="filterProducts()">
+                    </div>
+                    <div>
+                        <label class="block font-bold mb-2 text-gray-800">CATEGORÍA:</label>
+                        <select id="categoryFilter" class="w-full px-4 py-3 bg-white rounded-xl focus:outline-none focus:ring-2 focus:ring-red-500 border-2 border-gray-200" onchange="filterProducts()"><option value="">Todas las categorías</option><option value="chaquetas">Jackets</option><option value="guantes">Guantes</option><option value="pantalones">Pantalones</option><option value="cascos">Cascos</option><option value="botas">Botas</option><option value="rodilleras">Rodilleras</option><option value="protecciones">Protecciones</option><option value="maletines">Maletines</option><option value="otros">Otros</option></select>
+                    </div>
+                    <div>
+                        <label class="block font-bold mb-2 text-gray-800">MARCA:</label>
+                        <select id="brandFilter" class="w-full px-4 py-3 bg-white rounded-xl focus:outline-none focus:ring-2 focus:ring-red-500 border-2 border-gray-200" onchange="filterProducts()"><option value="">Todas las marcas</option><option value="cortech">CORTECH</option><option value="tourmaster">TOURMASTER</option><option value="joerocket">JOE ROCKET</option><option value="noru">NORU</option></select>
+                    </div>
+                    <div>
+                        <label class="block font-bold mb-2 text-gray-800">RANGO DE PRECIOS:</label>
+                        <div class="relative">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="text-sm font-semibold text-gray-700">₡0</span>
+                                <div class="flex-1 relative">
+                                    <input type="range" id="minPriceRange" min="0" max="200000" step="10000" value="0" class="absolute w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer slider-thumb-red" oninput="updatePriceFilter()">
+                                    <input type="range" id="maxPriceRange" min="0" max="200000" step="10000" value="200000" class="absolute w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer slider-thumb-red" oninput="updatePriceFilter()">
+                                </div>
+                                <span class="text-sm font-semibold text-gray-700">₡200K+</span>
+                            </div>
+                            <div class="text-center">
+                                <span id="priceRangeDisplay" class="text-sm font-bold text-red-600">₡0 - ₡200,000+</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-end">
+                        <button onclick="clearFilters()" class="w-full bg-gray-600 text-white py-3 px-4 rounded-xl hover:bg-gray-700 transition-colors font-bold">
+                            <i class="fas fa-refresh mr-2"></i>LIMPIAR FILTROS
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div id="productsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <div class="product-card">
+                        <div class="relative overflow-hidden">
+                            <img src="https://cdn.somoskudasai.com/image/71712bee42da90d04d2a8511b1daaea3/300x300/aak.jpg" alt="Nueva Chaqueta Premium" class="product-image">
+                            <div class="absolute top-3 left-3">
+                                <span class="bg-red-gradient text-white px-3 py-1 rounded-full text-xs font-bold">
+                                    TOURMASTER
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="p-6">
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-tshirt text-red-500"></i>
+                                <span class="text-sm font-semibold text-gray-600 uppercase">
+                                    Jackets
+                                </span>
+                            </div>
+                            
+                            <h3 class="font-bold text-lg mb-3 text-gray-800 line-clamp-2">Nueva Chaqueta Premium</h3>
+                            
+                            <p class="text-gray-600 text-sm mb-4 line-clamp-3">Chaqueta de alta calidad con protecciones CE y materiales resistentes. Ideal para touring y uso diario con excelente ventilación.</p>
+                            
+                            <div class="mb-4">
+                                <span class="text-sm font-semibold text-gray-700">Tallas disponibles:</span>
+                                <div class="flex flex-wrap gap-1 mt-1">
+                                    
+                                        <span class="bg-gray-200 text-gray-700 px-2 py-1 rounded text-xs font-semibold">S</span>
+                                    
+                                        <span class="bg-gray-200 text-gray-700 px-2 py-1 rounded text-xs font-semibold">M</span>
+                                    
+                                        <span class="bg-gray-200 text-gray-700 px-2 py-1 rounded text-xs font-semibold">L</span>
+                                    
+                                        <span class="bg-gray-200 text-gray-700 px-2 py-1 rounded text-xs font-semibold">XL</span>
+                                    
+                                        <span class="bg-gray-200 text-gray-700 px-2 py-1 rounded text-xs font-semibold">XXL</span>
+                                    
+                                </div>
+                            </div>
+                            
+                            <div class="flex justify-between items-center">
+                                <div class="text-2xl font-bold text-red-600">
+                                    ₡250.000
+                                </div>
+                                <a href="https://wa.me/50688845533?text=Hola! Me interesa el producto: Nueva%20Chaqueta%20Premium - ₡250.000" target="_blank" rel="noopener noreferrer" class="bg-red-gradient text-white px-4 py-2 rounded-lg font-bold hover:scale-105 transition-all duration-300 shadow-lg" onclick="trackClick('product_whatsapp', 1759481018504)">
+                                    <i class="fab fa-whatsapp mr-2"></i>CONSULTAR
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section id="brandsSection" class="py-8 bg-brand-gradient">
+        <div class="container mx-auto px-4">
+            <h2 id="brandsTitle" class="text-4xl text-center mb-8 text-white brand-title">MARCAS PREMIUM</h2>
+            <div id="brandsGrid" class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    <div class="text-center">
+                        <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=200&amp;q=80" alt="CORTECH" class="w-20 h-20 mx-auto mb-4 rounded-lg object-cover shadow-md">
+                        <h3 class="font-bold text-lg text-gray-800 mb-2">CORTECH</h3>
+                        <a href="https://cortech.com" target="_blank" rel="noopener noreferrer" class="text-red-600 hover:text-red-800 font-semibold text-sm">
+                            Visitar Sitio Web
+                        </a>
+                    </div>
+                </div>
+            
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    <div class="text-center">
+                        <img src="https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=200&amp;q=80" alt="TOURMASTER" class="w-20 h-20 mx-auto mb-4 rounded-lg object-cover shadow-md">
+                        <h3 class="font-bold text-lg text-gray-800 mb-2">TOURMASTER</h3>
+                        <a href="https://tourmaster.com" target="_blank" rel="noopener noreferrer" class="text-red-600 hover:text-red-800 font-semibold text-sm">
+                            Visitar Sitio Web
+                        </a>
+                    </div>
+                </div>
+            
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    <div class="text-center">
+                        <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=200&amp;q=80" alt="JOE ROCKET" class="w-20 h-20 mx-auto mb-4 rounded-lg object-cover shadow-md">
+                        <h3 class="font-bold text-lg text-gray-800 mb-2">JOE ROCKET</h3>
+                        <a href="https://joerocket.com" target="_blank" rel="noopener noreferrer" class="text-red-600 hover:text-red-800 font-semibold text-sm">
+                            Visitar Sitio Web
+                        </a>
+                    </div>
+                </div>
+            
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    <div class="text-center">
+                        <img src="https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=200&amp;q=80" alt="NORU" class="w-20 h-20 mx-auto mb-4 rounded-lg object-cover shadow-md">
+                        <h3 class="font-bold text-lg text-gray-800 mb-2">NORU</h3>
+                        <a href="https://noru.com" target="_blank" rel="noopener noreferrer" class="text-red-600 hover:text-red-800 font-semibold text-sm">
+                            Visitar Sitio Web
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-8">
+                <p class="text-xl text-gray-300 mb-4 brand-subtitle">Trabajamos con las mejores marcas disponibles en Sullivans y Helmet House para ofrecerte calidad garantizada</p>
+                <div class="flex justify-center space-x-8 text-gray-400">
+                    <div class="flex items-center space-x-3">
+                        <i class="fas fa-shield-alt text-red-500 text-2xl"></i>
+                        <span class="font-bold">Protección Certificada</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i class="fas fa-award text-red-500 text-2xl"></i>
+                        <span class="font-bold">Calidad Premium</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i class="fas fa-store text-red-500 text-2xl"></i>
+                        <span class="font-bold">Los Yoses</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="bg-brand-gradient text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div>
+                    <h2 id="contactTitle" class="text-4xl mb-6 brand-title">CONTÁCTANOS</h2>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4">
+                            <i class="fas fa-map-marker-alt text-red-500 text-2xl"></i>
+                            <a href="https://www.google.com/maps/place/Jackets+Master/@9.9290393,-84.063926,17z/data=!3m1!4b1!4m6!3m5!1s0x8fa0e38bf54cc7bf:0xc835cd09d683c4ac!8m2!3d9.9290393!4d-84.0613511!16s%2Fg%2F11wtk_rf_3?entry=ttu&amp;g_ep=EgoyMDI1MDkyNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="hover:text-red-400 transition-colors underline text-lg">San José, Los Yoses, Montes de Oca</a>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <i class="fas fa-phone text-red-500 text-2xl"></i>
+                            <span id="contactPhone" class="text-lg">+506 88845533</span>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <i class="fas fa-envelope text-red-500 text-2xl"></i>
+                            <span class="text-lg">jacketsmaster@gmail.com</span>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <i class="fas fa-clock text-red-500 text-2xl"></i>
+                            <span class="text-lg">Lun - Vie: 11:00 AM - 6:00 PM | Sáb: 10:00 AM - 3:00 PM</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h3 class="text-2xl font-bold mb-4 brand-subtitle">SÍGUENOS</h3>
+                        <div class="flex space-x-6">
+                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="text-3xl hover:text-red-400 transition-colors">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="text-3xl hover:text-red-400 transition-colors">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="text-3xl hover:text-red-400 transition-colors">
+                                <i class="fab fa-x-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+                
+                <div>
+                    <h3 class="text-3xl mb-6 brand-subtitle">VISÍTANOS</h3>
+                    <div class="bg-gray-800 rounded-2xl p-6 shadow-2xl">
+                        <h4 class="text-2xl font-bold mb-4 text-red-400 brand-subtitle">NUESTRA UBICACIÓN</h4>
+                        <div class="mb-4">
+                            <iframe src="https://www.google.com/maps?client=opera&amp;hs=H6Y&amp;sca_esv=9594ada01a48a169&amp;output=embed&amp;q=jacketsmaster&amp;source=lnms" width="100%" height="250" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-lg text-gray-300 mb-3">¡Le esperamos en nuestra tienda física!</p>
+                            <p class="text-gray-400 mb-4">Venga a probarse los jackets y reciba asesoría personalizada de nuestros expertos.</p>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                                <a href="https://wa.me/50688845533" id="whatsappLink" target="_blank" rel="noopener noreferrer" class="bg-red-gradient text-white px-4 py-3 rounded-xl font-bold inline-block hover:scale-105 transition-all duration-300 shadow-lg" onclick="trackClick('contact_whatsapp')">
+                                    <i class="fab fa-whatsapp mr-2"></i><span id="contactWhatsappText">WHATSAPP</span>
+                                </a>
+                                <a href="https://waze.com/ul/hd1u0rps2s" id="wazeLink" target="_blank" rel="noopener noreferrer" class="bg-blue-600 text-white px-4 py-3 rounded-xl font-bold inline-block hover:scale-105 transition-all duration-300 shadow-lg">
+                                    <i class="fas fa-route mr-2"></i><span id="wazeButtonTextDisplay">ABRIR EN WAZE</span>
+                                </a>
+                                <a href="https://whatsapp.com/channel/0029VaAqJvs8feKtE8dJPv1h" id="promoLink" target="_blank" rel="noopener noreferrer" class="bg-green-600 text-white px-4 py-3 rounded-xl font-bold inline-block hover:scale-105 transition-all duration-300 shadow-lg">
+                                    <i class="fas fa-bullhorn mr-2"></i><span id="promoButtonTextDisplay">CANAL PROMOS</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="mainFooter" class="bg-brand-gradient text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex items-center justify-center space-x-4 mb-4">
+                <div id="footerLogoContainer" class="w-12 h-12 bg-red-gradient rounded-xl flex items-center justify-center shadow-lg">
+                    <i class="fas fa-motorcycle text-white text-2xl" id="footerIcon"></i>
+                </div>
+                <span id="siteTitleFooter" class="text-3xl font-bold brand-title">JACKETS MASTER</span>
+            </div>
+            <p class="text-gray-400 text-lg">© 2025 Jackets Master Los Yoses. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Global Configuration
+        let config = {
+            siteName: "JACKETS MASTER",
+            whatsappNumber: "88845533",
+            siteDescription: "Descubra nuestra colección de equipamiento motociclista de las mejores marcas: Cortech, TourMaster, Joe Rocket y Noru. Protección, estilo y durabilidad para los verdaderos riders de Los Yoses.",
+            mainIcon: "fas fa-motorcycle",
+            customLogo: null,
+            favicon: null,
+            colors: {
+                bodyBg: "#000000",
+                headerBg: "#000000",
+                heroBg: "#1f1f1f",
+                productsBg: "#f3f4f6",
+                brandsBg: "#000000",
+                footerBg: "#000000",
+                titleColor: "#dc2626",
+                textColor: "#ffffff",
+                linkColor: "#dc2626",
+                buttonColor: "#dc2626"
+            },
+            buttons: {
+                mainWhatsappText: "CONTACTANOS POR WHATSAPP",
+                productWhatsappText: "CONSULTAR",
+                contactWhatsappText: "WHATSAPP",
+                wazeButtonText: "ABRIR EN WAZE",
+                wazeUrl: "https://waze.com/ul/hd1u0rps2s",
+                promoButtonText: "CANAL PROMOS",
+                promoUrl: "https://whatsapp.com/channel/0029VaAqJvs8feKtE8dJPv1h"
+            },
+            categories: {
+                chaquetas: { name: "Jackets", icon: "fas fa-tshirt", status: "active" },
+                guantes: { name: "Guantes", icon: "fas fa-hand-paper", status: "active" },
+                pantalones: { name: "Pantalones", icon: "fas fa-user", status: "active" },
+                cascos: { name: "Cascos", icon: "fas fa-hard-hat", status: "active" },
+                botas: { name: "Botas", icon: "fas fa-shoe-prints", status: "active" },
+                rodilleras: { name: "Rodilleras", icon: "fas fa-shield-alt", status: "active" },
+                protecciones: { name: "Protecciones", icon: "fas fa-shield", status: "active" },
+                maletines: { name: "Maletines", icon: "fas fa-suitcase", status: "active" },
+                otros: { name: "Otros", icon: "fas fa-ellipsis-h", status: "active" }
+            },
+            brands: {
+                cortech: {
+                    name: "CORTECH",
+                    url: "https://cortech.com",
+                    image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80",
+                    status: "active"
+                },
+                tourmaster: {
+                    name: "TOURMASTER",
+                    url: "https://tourmaster.com",
+                    image: "https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80",
+                    status: "active"
+                },
+                joerocket: {
+                    name: "JOE ROCKET",
+                    url: "https://joerocket.com",
+                    image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80",
+                    status: "active"
+                },
+                noru: {
+                    name: "NORU",
+                    url: "https://noru.com",
+                    image: "https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80",
+                    status: "active"
+                }
+            }
+        };
+
+        // Global Variables
+        let products = [];
+        let filteredProducts = [];
+        let nextProductId = 1;
+        let editingProductId = null;
+        let selectedProducts = new Set();
+        let currentProductImages = [];
+        let analytics = {
+            totalClicks: 0,
+            productClicks: {},
+            categoryClicks: {},
+            brandClicks: {},
+            recentActivity: []
+        };
+        let sessionTimer = 1800; // 30 minutes
+        let sessionInterval;
+        let isDarkMode = false;
+
+        // Initialize Application
+        document.addEventListener('DOMContentLoaded', function() {
+            loadAllData();
+            initializeApp();
+            updateAllDisplays();
+            startSessionTimer();
+            
+            // Setup image upload
+            setupImageUpload();
+            
+            // Load default products if none exist
+            if (products.length === 0) {
+                loadDefaultProducts();
+            }
+        });
+
+        // Load default products with more examples
+        function loadDefaultProducts() {
+            const defaultProducts = [
+                {
+                    id: 1,
+                    name: "Cortech Adrenaline 4.0 RR Leather Jacket",
+                    price: 389990,
+                    category: "chaquetas",
+                    brand: "cortech",
+                    sizes: ["S", "M", "L", "XL", "XXL"],
+                    description: "Chaqueta de cuero premium con protecciones CE en hombros, codos y espalda. Construcción de cuero bovino de 1.2-1.4mm con perforaciones para ventilación. Ideal para touring y uso diario.",
+                    images: ["https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"],
+                    status: "active"
+                },
+                {
+                    id: 2,
+                    name: "Cortech Apex V1 Textile Jacket",
+                    price: 279990,
+                    category: "chaquetas",
+                    brand: "cortech",
+                    sizes: ["S", "M", "L", "XL", "XXL"],
+                    description: "Chaqueta textil 3-en-1 con membrana impermeable/transpirable. Protecciones CE incluidas, forro térmico removible y múltiples bolsillos de ventilación. Perfecta para todas las condiciones climáticas.",
+                    images: ["https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"],
+                    status: "active"
+                },
+                {
+                    id: 3,
+                    name: "TourMaster Intake Air 5.0 Mesh Jacket",
+                    price: 199990,
+                    category: "chaquetas",
+                    brand: "tourmaster",
+                    sizes: ["M", "L", "XL", "XXL"],
+                    description: "Chaqueta de malla ultra-ventilada para clima cálido. Protecciones CE removibles, construcción resistente y múltiples bolsillos. Ideal para el clima tropical de Costa Rica.",
+                    images: ["https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"],
+                    status: "active"
+                },
+                {
+                    id: 4,
+                    name: "Joe Rocket Velocity 2.0 Mesh Jacket",
+                    price: 159990,
+                    category: "chaquetas",
+                    brand: "joerocket",
+                    sizes: ["S", "M", "L", "XL"],
+                    description: "Chaqueta deportiva de malla con diseño agresivo. Protecciones en hombros y codos, paneles reflectivos para visibilidad nocturna. Excelente relación calidad-precio.",
+                    images: ["https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"],
+                    status: "active"
+                },
+                {
+                    id: 5,
+                    name: "Cortech Scarab Winter Gloves",
+                    price: 89990,
+                    category: "guantes",
+                    brand: "cortech",
+                    sizes: ["S", "M", "L", "XL"],
+                    description: "Guantes de invierno con membrana impermeable Hipora. Protección en nudillos, palma reforzada y compatibles con pantallas táctiles. Perfectos para touring de larga distancia.",
+                    images: ["https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"],
+                    status: "active"
+                },
+                {
+                    id: 6,
+                    name: "TourMaster Summer Elite 3 Gloves",
+                    price: 69990,
+                    category: "guantes",
+                    brand: "tourmaster",
+                    sizes: ["S", "M", "L", "XL"],
+                    description: "Guantes de verano ultra-ventilados con protección en nudillos. Construcción de cuero y malla, palma de cabra para mejor agarre. Ideales para clima cálido.",
+                    images: ["https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"],
+                    status: "active"
+                },
+                {
+                    id: 7,
+                    name: "Noru Kaze Full Face Helmet",
+                    price: 299990,
+                    category: "cascos",
+                    brand: "noru",
+                    sizes: ["XS", "S", "M", "L", "XL"],
+                    description: "Casco integral con certificación DOT/ECE. Sistema de ventilación avanzado, visera anti-empañante y forro antibacterial removible. Diseño aerodinámico y ligero.",
+                    images: ["https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"],
+                    status: "active"
+                },
+                {
+                    id: 8,
+                    name: "Joe Rocket Ballistic Revolution Pants",
+                    price: 219990,
+                    category: "pantalones",
+                    brand: "joerocket",
+                    sizes: ["30", "32", "34", "36", "38"],
+                    description: "Pantalones textiles con protecciones CE en rodillas y caderas. Membrana impermeable, forro térmico removible y ventilaciones. Perfectos para touring y uso diario.",
+                    images: ["https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"],
+                    status: "active"
+                }
+            ];
+            
+            products = defaultProducts;
+            filteredProducts = [...products];
+            nextProductId = 9;
+            saveAllData();
+            updateAllDisplays();
+        }
+
+        // Authentication - SOLO ACCESIBLE MEDIANTE BOTÓN ADMIN
+        
+                }, 100);
+            }
+        }
+
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const username = document.getElementById('loginUser').value;
+            const password = document.getElementById('loginPassword').value;
+            
+            if (username === 'jm' && password === 'jm2024') {
+                // Ocultar login
+                const loginOverlay = document.getElementById('loginOverlay');
+                loginOverlay.style.display = 'none';
+                loginOverlay.style.visibility = 'hidden';
+                
+                // Mostrar admin panel
+                const adminOverlay = document.getElementById('adminOverlay');
+                adminOverlay.classList.add('active');
+                adminOverlay.style.display = 'block';
+                adminOverlay.style.visibility = 'visible';
+                
+                showNotification('¡Bienvenido al panel de administración!', 'success');
+                logActivity('Inicio de sesión exitoso');
+                startSessionTimer();
+            } else {
+                document.getElementById('loginError').textContent = 'Usuario o contraseña incorrectos';
+                document.getElementById('loginError').style.display = 'block';
+                setTimeout(() => {
+                    document.getElementById('loginError').style.display = 'none';
+                }, 3000);
+            }
+        });
+
+        function closeAdminPanel() {
+            const adminOverlay = document.getElementById('adminOverlay');
+            const loginOverlay = document.getElementById('loginOverlay');
+            
+            // Ocultar completamente el panel de admin
+            adminOverlay.classList.remove('active');
+            adminOverlay.style.display = 'none';
+            adminOverlay.style.visibility = 'hidden';
+            
+            // Ocultar completamente el login
+            loginOverlay.style.display = 'none';
+            loginOverlay.style.visibility = 'hidden';
+            
+            clearInterval(sessionInterval);
+            logActivity('Cierre de sesión');
+            
+            // Limpiar formulario de login
+            document.getElementById('loginForm').reset();
+            document.getElementById('loginError').style.display = 'none';
+        }
+
+        function startSessionTimer() {
+            clearInterval(sessionInterval);
+            sessionTimer = 1800; // Reset to 30 minutes
+            
+            sessionInterval = setInterval(() => {
+                sessionTimer--;
+                const minutes = Math.floor(sessionTimer / 60);
+                const seconds = sessionTimer % 60;
+                document.getElementById('sessionTimer').textContent = 
+                    `Tiempo: ${minutes}:${seconds.toString().padStart(2, '0')}`;
+                
+                if (sessionTimer <= 0) {
+                    closeAdminPanel();
+                    showNotification('Sesión expirada por inactividad', 'warning');
+                }
+            }, 1000);
+        }
+
+        // Notifications System
+        function showNotification(message, type = 'success') {
+            const notification = document.createElement('div');
+            notification.className = `notification ${type}`;
+            notification.innerHTML = `
+                <i class="fas ${type === 'success' ? 'fa-check-circle' : type === 'error' ? 'fa-exclamation-circle' : 'fa-info-circle'} mr-3"></i>
+                ${message}
+            `;
+            
+            document.body.appendChild(notification);
+            
+            setTimeout(() => notification.classList.add('show'), 100);
+            
+            setTimeout(() => {
+                notification.classList.remove('show');
+                setTimeout(() => document.body.removeChild(notification), 400);
+            }, 4000);
+        }
+
+
+
+        // Tab Management
+        function switchTab(tabName) {
+            document.querySelectorAll('.admin-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelectorAll('.admin-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            document.getElementById(tabName + 'Tab').classList.add('active');
+            event.target.classList.add('active');
+            
+            // Load tab-specific data
+            if (tabName === 'dashboard') {
+                updateDashboard();
+            } else if (tabName === 'categories') {
+                loadCategoriesList();
+            } else if (tabName === 'brands') {
+                loadBrandsList();
+            }
+        }
+
+        // Data Management
+        function loadAllData() {
+            const savedData = localStorage.getItem('jacketsmaster_data');
+            if (savedData) {
+                try {
+                    const data = JSON.parse(savedData);
+                    if (data.products) products = data.products;
+                    if (data.config) config = { ...config, ...data.config };
+                    if (data.analytics) analytics = { ...analytics, ...data.analytics };
+                    
+                    filteredProducts = [...products];
+                    nextProductId = products.length > 0 ? Math.max(...products.map(p => p.id)) + 1 : 1;
+                } catch (e) {
+                    console.error('Error loading data:', e);
+                }
+            }
+        }
+
+        function saveAllData() {
+            try {
+                const data = {
+                    products,
+                    config,
+                    analytics,
+                    lastSaved: new Date().toISOString()
+                };
+                localStorage.setItem('jacketsmaster_data', JSON.stringify(data));
+                showNotification('Datos guardados correctamente', 'success');
+            } catch (e) {
+                console.error('Error saving data:', e);
+                showNotification('Error al guardar los datos', 'error');
+            }
+        }
+
+        // Initialize App
+        function initializeApp() {
+            loadConfigValues();
+            updateStyles();
+            updateSiteInfo();
+            updateButtons();
+            populateSelects();
+            updateStats();
+        }
+
+        function updateAllDisplays() {
+            displayProducts(filteredProducts);
+            displayBrands();
+            updateAdminProductList();
+            updateStats();
+        }
+
+        // Product Management
+        document.getElementById('productForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const productData = {
+                name: document.getElementById('productName').value,
+                price: parseInt(document.getElementById('productPrice').value),
+                category: document.getElementById('productCategory').value,
+                brand: document.getElementById('productBrand').value,
+                sizes: document.getElementById('productSizes').value.split(',').map(s => s.trim()),
+                description: document.getElementById('productDescription').value,
+                images: [...currentProductImages],
+                status: document.getElementById('productStatus').value
+            };
+
+            if (editingProductId) {
+                const index = products.findIndex(p => p.id === editingProductId);
+                if (index !== -1) {
+                    products[index] = { ...products[index], ...productData };
+                    showNotification('Producto actualizado exitosamente', 'success');
+                    logActivity(`Producto actualizado: ${productData.name}`);
+                }
+                editingProductId = null;
+            } else {
+                const newProduct = {
+                    id: nextProductId++,
+                    ...productData
+                };
+                products.push(newProduct);
+                showNotification('Producto agregado exitosamente', 'success');
+                logActivity(`Producto creado: ${productData.name}`);
+            }
+
+            filteredProducts = [...products];
+            saveAllData();
+            updateAllDisplays();
+            clearProductForm();
+        });
+
+        // Image Upload System
+        function setupImageUpload() {
+            const uploadArea = document.getElementById('imageUploadArea');
+            const fileInput = document.getElementById('imageFiles');
+            
+            uploadArea.addEventListener('click', () => fileInput.click());
+            
+            uploadArea.addEventListener('dragover', (e) => {
+                e.preventDefault();
+                uploadArea.classList.add('dragover');
+            });
+            
+            uploadArea.addEventListener('dragleave', () => {
+                uploadArea.classList.remove('dragover');
+            });
+            
+            uploadArea.addEventListener('drop', (e) => {
+                e.preventDefault();
+                uploadArea.classList.remove('dragover');
+                handleFiles(e.dataTransfer.files);
+            });
+            
+            fileInput.addEventListener('change', (e) => {
+                handleFiles(e.target.files);
+            });
+        }
+
+        function handleFiles(files) {
+            Array.from(files).forEach(file => {
+                if (file.type.startsWith('image/') && file.size <= 5 * 1024 * 1024) {
+                    const reader = new FileReader();
+                    reader.onload = (e) => {
+                        currentProductImages.push(e.target.result);
+                        updateImagePreview();
+                        showNotification('Imagen agregada correctamente', 'success');
+                    };
+                    reader.readAsDataURL(file);
+                } else {
+                    showNotification('Archivo no válido o muy grande (máx. 5MB)', 'error');
+                }
+            });
+        }
+
+        function addImageUrl() {
+            const url = document.getElementById('imageUrl').value;
+            if (url) {
+                currentProductImages.push(url);
+                updateImagePreview();
+                document.getElementById('imageUrl').value = '';
+                showNotification('URL de imagen agregada', 'success');
+            }
+        }
+
+        function updateImagePreview() {
+            const preview = document.getElementById('imagePreview');
+            preview.innerHTML = currentProductImages.map((img, index) => `
+                <div class="relative bg-gray-700 rounded-xl overflow-hidden">
+                    <img src="${img}" alt="Preview ${index + 1}" class="w-full h-24 object-cover">
+                    <button class="absolute top-2 right-2 bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs hover:bg-red-700" onclick="removeImage(${index})">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            `).join('');
+        }
+
+        function removeImage(index) {
+            currentProductImages.splice(index, 1);
+            updateImagePreview();
+            showNotification('Imagen eliminada', 'success');
+        }
+
+        function clearProductForm() {
+            document.getElementById('productForm').reset();
+            currentProductImages = [];
+            updateImagePreview();
+            editingProductId = null;
+        }
+
+        function cancelProductEdit() {
+            clearProductForm();
+            showNotification('Edición cancelada', 'warning');
+        }
+
+        // Product Templates
+        function createTemplate(type) {
+            const templates = {
+                jacket: {
+                    name: "Nueva Chaqueta Premium",
+                    category: "chaquetas",
+                    sizes: "S,M,L,XL,XXL",
+                    description: "Chaqueta de alta calidad con protecciones CE y materiales resistentes. Ideal para touring y uso diario con excelente ventilación.",
+                    price: 250000
+                },
+                gloves: {
+                    name: "Nuevos Guantes Deportivos",
+                    category: "guantes",
+                    sizes: "S,M,L,XL",
+                    description: "Guantes con protección en nudillos y palma reforzada. Compatibles con pantallas táctiles y excelente agarre.",
+                    price: 75000
+                },
+                helmet: {
+                    name: "Nuevo Casco Integral",
+                    category: "cascos",
+                    sizes: "XS,S,M,L,XL,XXL",
+                    description: "Casco con certificación DOT/ECE y sistema de ventilación avanzado. Visera anti-empañante y forro antibacterial.",
+                    price: 180000
+                }
+            };
+            
+            const template = templates[type];
+            if (template) {
+                document.getElementById('productName').value = template.name;
+                document.getElementById('productCategory').value = template.category;
+                document.getElementById('productSizes').value = template.sizes;
+                document.getElementById('productDescription').value = template.description;
+                document.getElementById('productPrice').value = template.price;
+                showNotification(`Plantilla ${type} cargada`, 'success');
+            }
+        }
+
+        // Bulk Operations
+        function selectAllProducts() {
+            const checkboxes = document.querySelectorAll('.product-checkbox');
+            const allSelected = Array.from(checkboxes).every(cb => cb.checked);
+            
+            checkboxes.forEach(cb => {
+                cb.checked = !allSelected;
+                if (cb.checked) {
+                    selectedProducts.add(parseInt(cb.value));
+                } else {
+                    selectedProducts.delete(parseInt(cb.value));
+                }
+            });
+            
+            showNotification(`${allSelected ? 'Deseleccionados' : 'Seleccionados'} todos los productos`, 'success');
+        }
+
+        function bulkActivate() {
+            if (selectedProducts.size === 0) {
+                showNotification('No hay productos seleccionados', 'warning');
+                return;
+            }
+            
+            products.forEach(p => {
+                if (selectedProducts.has(p.id)) {
+                    p.status = 'active';
+                }
+            });
+            
+            selectedProducts.clear();
+            saveAllData();
+            updateAllDisplays();
+            showNotification('Productos activados exitosamente', 'success');
+        }
+
+        function bulkDeactivate() {
+            if (selectedProducts.size === 0) {
+                showNotification('No hay productos seleccionados', 'warning');
+                return;
+            }
+            
+            products.forEach(p => {
+                if (selectedProducts.has(p.id)) {
+                    p.status = 'inactive';
+                }
+            });
+            
+            selectedProducts.clear();
+            saveAllData();
+            updateAllDisplays();
+            showNotification('Productos desactivados exitosamente', 'success');
+        }
+
+        function bulkDelete() {
+            if (selectedProducts.size === 0) {
+                showNotification('No hay productos seleccionados', 'warning');
+                return;
+            }
+            
+            if (confirm(`¿Eliminar ${selectedProducts.size} productos seleccionados?`)) {
+                products = products.filter(p => !selectedProducts.has(p.id));
+                filteredProducts = [...products];
+                selectedProducts.clear();
+                saveAllData();
+                updateAllDisplays();
+                showNotification('Productos eliminados exitosamente', 'success');
+                logActivity(`Eliminación masiva: ${selectedProducts.size} productos`);
+            }
+        }
+
+        // Categories Management
+        document.getElementById('categoryForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const id = document.getElementById('categoryId').value;
+            const name = document.getElementById('categoryName').value;
+            const icon = document.getElementById('categoryIcon').value || 'fas fa-tag';
+            const status = document.getElementById('categoryStatus').value;
+            
+            config.categories[id] = { name, icon, status };
+            saveAllData();
+            populateSelects();
+            loadCategoriesList();
+            this.reset();
+            showNotification('Categoría agregada exitosamente', 'success');
+            logActivity(`Categoría creada: ${name}`);
+        });
+
+        function loadCategoriesList() {
+            const list = document.getElementById('categoriesList');
+            list.innerHTML = Object.keys(config.categories).map(catId => {
+                const cat = config.categories[catId];
+                return `
+                    <div class="bg-gray-700 p-4 rounded-xl flex justify-between items-center">
+                        <div class="flex items-center gap-4">
+                            <i class="${cat.icon} text-red-400 text-xl"></i>
+                            <div>
+                                <span class="text-white font-semibold text-lg">${cat.name}</span>
+                                <div class="text-gray-400 text-sm">${catId}</div>
+                            </div>
+                            <span class="status-${cat.status}">${cat.status === 'active' ? 'Activa' : 'Inactiva'}</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <button onclick="toggleCategoryStatus('${catId}')" class="btn-admin ${cat.status === 'active' ? 'warning' : 'success'}">
+                                <i class="fas ${cat.status === 'active' ? 'fa-eye-slash' : 'fa-eye'}"></i>
+                            </button>
+                            <button onclick="deleteCategory('${catId}')" class="btn-admin danger">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function toggleCategoryStatus(catId) {
+            const category = config.categories[catId];
+            category.status = category.status === 'active' ? 'inactive' : 'active';
+            saveAllData();
+            populateSelects();
+            loadCategoriesList();
+            showNotification(`Categoría ${category.status === 'active' ? 'activada' : 'desactivada'}`, 'success');
+        }
+
+        function deleteCategory(catId) {
+            if (confirm(`¿Eliminar la categoría "${config.categories[catId].name}"?`)) {
+                delete config.categories[catId];
+                saveAllData();
+                populateSelects();
+                loadCategoriesList();
+                showNotification('Categoría eliminada', 'success');
+                logActivity(`Categoría eliminada: ${catId}`);
+            }
+        }
+
+        // Brands Management
+        document.getElementById('brandForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const id = document.getElementById('brandId').value;
+            const name = document.getElementById('brandName').value;
+            const url = document.getElementById('brandUrl').value;
+            const image = document.getElementById('brandImage').value;
+            const status = document.getElementById('brandStatus').value;
+            
+            config.brands[id] = { name, url, image, status };
+            saveAllData();
+            populateSelects();
+            loadBrandsList();
+            displayBrands();
+            this.reset();
+            showNotification('Marca agregada exitosamente', 'success');
+            logActivity(`Marca creada: ${name}`);
+        });
+
+        function loadBrandsList() {
+            const list = document.getElementById('brandsList');
+            list.innerHTML = Object.keys(config.brands).map(brandId => {
+                const brand = config.brands[brandId];
+                return `
+                    <div class="bg-gray-700 p-4 rounded-xl">
+                        <div class="flex justify-between items-start mb-3">
+                            <div class="flex items-center gap-4">
+                                <img src="${brand.image}" alt="${brand.name}" class="w-12 h-12 rounded-lg object-cover">
+                                <div>
+                                    <div class="text-white font-semibold text-lg">${brand.name}</div>
+                                    <div class="text-gray-400 text-sm">${brandId}</div>
+                                </div>
+                                <span class="status-${brand.status}">${brand.status === 'active' ? 'Activa' : 'Inactiva'}</span>
+                            </div>
+                            <div class="flex gap-2">
+                                <button onclick="toggleBrandStatus('${brandId}')" class="btn-admin ${brand.status === 'active' ? 'warning' : 'success'}">
+                                    <i class="fas ${brand.status === 'active' ? 'fa-eye-slash' : 'fa-eye'}"></i>
+                                </button>
+                                <button onclick="deleteBrand('${brandId}')" class="btn-admin danger">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <a href="${brand.url}" target="_blank" class="text-blue-400 hover:underline text-sm">
+                            ${brand.url}
+                        </a>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function toggleBrandStatus(brandId) {
+            const brand = config.brands[brandId];
+            brand.status = brand.status === 'active' ? 'inactive' : 'active';
+            saveAllData();
+            populateSelects();
+            loadBrandsList();
+            displayBrands();
+            showNotification(`Marca ${brand.status === 'active' ? 'activada' : 'desactivada'}`, 'success');
+        }
+
+        function deleteBrand(brandId) {
+            if (confirm(`¿Eliminar la marca "${config.brands[brandId].name}"?`)) {
+                delete config.brands[brandId];
+                saveAllData();
+                populateSelects();
+                loadBrandsList();
+                displayBrands();
+                showNotification('Marca eliminada', 'success');
+                logActivity(`Marca eliminada: ${brandId}`);
+            }
+        }
+
+        // Display Functions
+        function displayProducts(productsToShow) {
+            const grid = document.getElementById('productsGrid');
+            
+            // Filter only active products for public display
+            const activeProducts = productsToShow.filter(p => p.status === 'active');
+            
+            if (activeProducts.length === 0) {
+                grid.innerHTML = `
+                    <div class="col-span-full text-center py-12">
+                        <i class="fas fa-search text-6xl text-gray-400 mb-4"></i>
+                        <h3 class="text-2xl font-bold text-gray-600 mb-2">No se encontraron productos</h3>
+                        <p class="text-gray-500">Intenta ajustar los filtros de búsqueda</p>
+                    </div>
+                `;
+                return;
+            }
+
+            grid.innerHTML = activeProducts.map(product => {
+                const category = config.categories[product.category];
+                const brand = config.brands[product.brand];
+                
+                return `
+                    <div class="product-card">
+                        <div class="relative overflow-hidden">
+                            <img src="${product.images[0] || 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'}" 
+                                 alt="${product.name}" 
+                                 class="product-image">
+                            <div class="absolute top-3 left-3">
+                                <span class="bg-red-gradient text-white px-3 py-1 rounded-full text-xs font-bold">
+                                    ${brand ? brand.name : 'PREMIUM'}
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="p-6">
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="${category ? category.icon : 'fas fa-tag'} text-red-500"></i>
+                                <span class="text-sm font-semibold text-gray-600 uppercase">
+                                    ${category ? category.name : 'Producto'}
+                                </span>
+                            </div>
+                            
+                            <h3 class="font-bold text-lg mb-3 text-gray-800 line-clamp-2">${product.name}</h3>
+                            
+                            <p class="text-gray-600 text-sm mb-4 line-clamp-3">${product.description}</p>
+                            
+                            <div class="mb-4">
+                                <span class="text-sm font-semibold text-gray-700">Tallas disponibles:</span>
+                                <div class="flex flex-wrap gap-1 mt-1">
+                                    ${product.sizes.map(size => `
+                                        <span class="bg-gray-200 text-gray-700 px-2 py-1 rounded text-xs font-semibold">${size}</span>
+                                    `).join('')}
+                                </div>
+                            </div>
+                            
+                            <div class="flex justify-between items-center">
+                                <div class="text-2xl font-bold text-red-600">
+                                    ₡${product.price.toLocaleString()}
+                                </div>
+                                <a href="https://wa.me/506${config.whatsappNumber}?text=Hola! Me interesa el producto: ${encodeURIComponent(product.name)} - ₡${product.price.toLocaleString()}" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer"
+                                   class="bg-red-gradient text-white px-4 py-2 rounded-lg font-bold hover:scale-105 transition-all duration-300 shadow-lg"
+                                   onclick="trackClick('product_whatsapp', ${product.id})">
+                                    <i class="fab fa-whatsapp mr-2"></i>${config.buttons.productWhatsappText}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function displayBrands() {
+            const grid = document.getElementById('brandsGrid');
+            
+            // Filter only active brands
+            const activeBrands = Object.entries(config.brands).filter(([id, brand]) => brand.status === 'active');
+            
+            grid.innerHTML = activeBrands.map(([id, brand]) => `
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                    <div class="text-center">
+                        <img src="${brand.image}" alt="${brand.name}" class="w-20 h-20 mx-auto mb-4 rounded-lg object-cover shadow-md">
+                        <h3 class="font-bold text-lg text-gray-800 mb-2">${brand.name}</h3>
+                        <a href="${brand.url}" target="_blank" rel="noopener noreferrer" 
+                           class="text-red-600 hover:text-red-800 font-semibold text-sm">
+                            Visitar Sitio Web
+                        </a>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function updateAdminProductList() {
+            const list = document.getElementById('adminProductList');
+            document.getElementById('productCount').textContent = products.length;
+            
+            if (products.length === 0) {
+                list.innerHTML = `
+                    <div class="text-center py-8 text-gray-400">
+                        <i class="fas fa-box-open text-4xl mb-4"></i>
+                        <p>No hay productos registrados</p>
+                    </div>
+                `;
+                return;
+            }
+
+            list.innerHTML = products.map(product => {
+                const category = config.categories[product.category];
+                const brand = config.brands[product.brand];
+                
+                return `
+                    <div class="bg-gray-700 p-4 rounded-xl flex items-center justify-between">
+                        <div class="flex items-center gap-4">
+                            <input type="checkbox" class="product-checkbox w-5 h-5" value="${product.id}" 
+                                   onchange="toggleProductSelection(${product.id})">
+                            <img src="${product.images[0] || 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80'}" 
+                                 alt="${product.name}" class="w-16 h-16 rounded-lg object-cover">
+                            <div>
+                                <h4 class="text-white font-semibold text-lg">${product.name}</h4>
+                                <div class="text-gray-400 text-sm">
+                                    ${category ? category.name : 'Sin categoría'} • ${brand ? brand.name : 'Sin marca'} • ₡${product.price.toLocaleString()}
+                                </div>
+                                <span class="status-${product.status}">${product.status === 'active' ? 'Activo' : 'Inactivo'}</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-2">
+                            <button onclick="toggleProductStatus(${product.id})" class="btn-admin ${product.status === 'active' ? 'warning' : 'success'}">
+                                <i class="fas ${product.status === 'active' ? 'fa-eye-slash' : 'fa-eye'}"></i>
+                            </button>
+                            <button onclick="editProduct(${product.id})" class="btn-admin info">
+                                <i class="fas fa-edit"></i>
+                            </button>
+                            <button onclick="deleteProduct(${product.id})" class="btn-admin danger">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function toggleProductSelection(productId) {
+            if (selectedProducts.has(productId)) {
+                selectedProducts.delete(productId);
+            } else {
+                selectedProducts.add(productId);
+            }
+        }
+
+        function toggleProductStatus(productId) {
+            const product = products.find(p => p.id === productId);
+            if (product) {
+                product.status = product.status === 'active' ? 'inactive' : 'active';
+                saveAllData();
+                updateAllDisplays();
+                showNotification(`Producto ${product.status === 'active' ? 'activado' : 'desactivado'}`, 'success');
+            }
+        }
+
+        function editProduct(productId) {
+            const product = products.find(p => p.id === productId);
+            if (product) {
+                document.getElementById('productName').value = product.name;
+                document.getElementById('productPrice').value = product.price;
+                document.getElementById('productCategory').value = product.category;
+                document.getElementById('productBrand').value = product.brand;
+                document.getElementById('productSizes').value = product.sizes.join(',');
+                document.getElementById('productDescription').value = product.description;
+                document.getElementById('productStatus').value = product.status || 'active';
+                
+                currentProductImages = [...product.images];
+                updateImagePreview();
+                
+                editingProductId = productId;
+                
+                // Switch to products tab
+                switchTab('products');
+                showNotification('Producto cargado para edición', 'success');
+            }
+        }
+
+        function deleteProduct(productId) {
+            const product = products.find(p => p.id === productId);
+            if (product && confirm(`¿Eliminar el producto "${product.name}"?`)) {
+                products = products.filter(p => p.id !== productId);
+                filteredProducts = [...products];
+                saveAllData();
+                updateAllDisplays();
+                showNotification('Producto eliminado', 'success');
+                logActivity(`Producto eliminado: ${product.name}`);
+            }
+        }
+
+        // Filter Functions
+        function filterProducts() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const categoryFilter = document.getElementById('categoryFilter').value;
+            const brandFilter = document.getElementById('brandFilter').value;
+            const minPrice = parseInt(document.getElementById('minPriceRange').value);
+            const maxPrice = parseInt(document.getElementById('maxPriceRange').value);
+
+            filteredProducts = products.filter(product => {
+                const matchesSearch = product.name.toLowerCase().includes(searchTerm) ||
+                                    product.description.toLowerCase().includes(searchTerm);
+                const matchesCategory = !categoryFilter || product.category === categoryFilter;
+                const matchesBrand = !brandFilter || product.brand === brandFilter;
+                const matchesPrice = product.price >= minPrice && (maxPrice >= 200000 ? true : product.price <= maxPrice);
+
+                return matchesSearch && matchesCategory && matchesBrand && matchesPrice;
+            });
+
+            displayProducts(filteredProducts);
+        }
+
+        function updatePriceFilter() {
+            const minPrice = parseInt(document.getElementById('minPriceRange').value);
+            const maxPrice = parseInt(document.getElementById('maxPriceRange').value);
+            
+            // Ensure min is not greater than max
+            if (minPrice > maxPrice) {
+                document.getElementById('minPriceRange').value = maxPrice;
+            }
+            
+            const displayMin = parseInt(document.getElementById('minPriceRange').value);
+            const displayMax = parseInt(document.getElementById('maxPriceRange').value);
+            
+            const minText = displayMin === 0 ? '₡0' : `₡${(displayMin / 1000).toFixed(0)}K`;
+            const maxText = displayMax >= 200000 ? '₡200K+' : `₡${(displayMax / 1000).toFixed(0)}K`;
+            
+            document.getElementById('priceRangeDisplay').textContent = `${minText} - ${maxText}`;
+            
+            filterProducts();
+        }
+
+        function clearFilters() {
+            document.getElementById('searchInput').value = '';
+            document.getElementById('categoryFilter').value = '';
+            document.getElementById('brandFilter').value = '';
+            document.getElementById('minPriceRange').value = '0';
+            document.getElementById('maxPriceRange').value = '200000';
+            document.getElementById('priceRangeDisplay').textContent = '₡0 - ₡200K+';
+            filteredProducts = [...products];
+            displayProducts(filteredProducts);
+            showNotification('Filtros limpiados', 'success');
+        }
+
+        // Mobile Menu
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        // Populate Select Options
+        function populateSelects() {
+            const categorySelect = document.getElementById('productCategory');
+            const brandSelect = document.getElementById('productBrand');
+            const categoryFilter = document.getElementById('categoryFilter');
+            const brandFilter = document.getElementById('brandFilter');
+
+            // Clear existing options
+            [categorySelect, brandSelect, categoryFilter, brandFilter].forEach(select => {
+                if (select) {
+                    const firstOption = select.querySelector('option[value=""]');
+                    select.innerHTML = '';
+                    if (firstOption) select.appendChild(firstOption);
+                }
+            });
+
+            // Populate categories
+            Object.entries(config.categories).forEach(([id, category]) => {
+                if (category.status === 'active') {
+                    const option = new Option(category.name, id);
+                    if (categorySelect) categorySelect.add(option.cloneNode(true));
+                    if (categoryFilter) categoryFilter.add(option.cloneNode(true));
+                }
+            });
+
+            // Populate brands
+            Object.entries(config.brands).forEach(([id, brand]) => {
+                if (brand.status === 'active') {
+                    const option = new Option(brand.name, id);
+                    if (brandSelect) brandSelect.add(option.cloneNode(true));
+                    if (brandFilter) brandFilter.add(option.cloneNode(true));
+                }
+            });
+        }
+
+        // Analytics and Tracking
+        function trackClick(type, productId = null) {
+            analytics.totalClicks++;
+            
+            if (type === 'product_whatsapp' && productId) {
+                analytics.productClicks[productId] = (analytics.productClicks[productId] || 0) + 1;
+                const product = products.find(p => p.id === productId);
+                if (product) {
+                    analytics.categoryClicks[product.category] = (analytics.categoryClicks[product.category] || 0) + 1;
+                    analytics.brandClicks[product.brand] = (analytics.brandClicks[product.brand] || 0) + 1;
+                    logActivity(`Consulta WhatsApp: ${product.name}`);
+                }
+            }
+            
+            saveAllData();
+        }
+
+        function logActivity(activity) {
+            analytics.recentActivity.unshift({
+                activity,
+                timestamp: new Date().toISOString(),
+                id: Date.now()
+            });
+            
+            // Keep only last 50 activities
+            if (analytics.recentActivity.length > 50) {
+                analytics.recentActivity = analytics.recentActivity.slice(0, 50);
+            }
+        }
+
+        // Dashboard Updates
+        function updateDashboard() {
+            updateStats();
+            updateTopProducts();
+            updateTopCategories();
+            updateRecentActivity();
+        }
+
+        function updateStats() {
+            document.getElementById('totalProducts').textContent = products.filter(p => p.status === 'active').length;
+            document.getElementById('totalCategories').textContent = Object.values(config.categories).filter(c => c.status === 'active').length;
+            document.getElementById('totalBrands').textContent = Object.values(config.brands).filter(b => b.status === 'active').length;
+            document.getElementById('totalClicks').textContent = analytics.totalClicks;
+        }
+
+        function updateTopProducts() {
+            const topProducts = Object.entries(analytics.productClicks)
+                .sort(([,a], [,b]) => b - a)
+                .slice(0, 5)
+                .map(([productId, clicks]) => {
+                    const product = products.find(p => p.id === parseInt(productId));
+                    return product ? { product, clicks } : null;
+                })
+                .filter(Boolean);
+
+            const container = document.getElementById('topProducts');
+            container.innerHTML = topProducts.length > 0 ? topProducts.map(({product, clicks}) => `
+                <div class="flex justify-between items-center bg-gray-700 p-3 rounded-lg">
+                    <span class="text-white">${product.name}</span>
+                    <span class="bg-red-600 text-white px-2 py-1 rounded text-sm">${clicks} clics</span>
+                </div>
+            `).join('') : '<p class="text-gray-400">No hay datos disponibles</p>';
+        }
+
+        function updateTopCategories() {
+            const topCategories = Object.entries(analytics.categoryClicks)
+                .sort(([,a], [,b]) => b - a)
+                .slice(0, 5)
+                .map(([categoryId, clicks]) => {
+                    const category = config.categories[categoryId];
+                    return category ? { category, clicks, id: categoryId } : null;
+                })
+                .filter(Boolean);
+
+            const container = document.getElementById('topCategories');
+            container.innerHTML = topCategories.length > 0 ? topCategories.map(({category, clicks}) => `
+                <div class="flex justify-between items-center bg-gray-700 p-3 rounded-lg">
+                    <div class="flex items-center gap-3">
+                        <i class="${category.icon} text-red-400"></i>
+                        <span class="text-white">${category.name}</span>
+                    </div>
+                    <span class="bg-red-600 text-white px-2 py-1 rounded text-sm">${clicks} clics</span>
+                </div>
+            `).join('') : '<p class="text-gray-400">No hay datos disponibles</p>';
+        }
+
+        function updateRecentActivity() {
+            const container = document.getElementById('recentActivity');
+            const recent = analytics.recentActivity.slice(0, 10);
+            
+            container.innerHTML = recent.length > 0 ? recent.map(activity => `
+                <div class="flex justify-between items-center bg-gray-700 p-3 rounded-lg">
+                    <span class="text-white">${activity.activity}</span>
+                    <span class="text-gray-400 text-sm">${new Date(activity.timestamp).toLocaleString()}</span>
+                </div>
+            `).join('') : '<p class="text-gray-400">No hay actividad reciente</p>';
+        }
+
+        // Design Customization
+        function loadConfigValues() {
+            // Load color values
+            if (config.colors) {
+                Object.entries(config.colors).forEach(([key, value]) => {
+                    const input = document.getElementById(key);
+                    if (input) input.value = value;
+                });
+            }
+
+            // Load button texts
+            if (config.buttons) {
+                Object.entries(config.buttons).forEach(([key, value]) => {
+                    const input = document.getElementById(key);
+                    if (input) input.value = value;
+                });
+            }
+
+            // Load site info
+            document.getElementById('siteName').value = config.siteName;
+            document.getElementById('mainIcon').value = config.mainIcon;
+            document.getElementById('whatsappNumber').value = config.whatsappNumber;
+        }
+
+        function updateStyles() {
+            const style = document.createElement('style');
+            style.innerHTML = `
+                body { background: ${config.colors.bodyBg} !important; }
+                #mainHeader { background: ${config.colors.headerBg} !important; }
+                #inicio { background: ${config.colors.heroBg} !important; }
+                #productos { background: ${config.colors.productsBg} !important; }
+                #brandsSection { background: ${config.colors.brandsBg} !important; }
+                #mainFooter { background: ${config.colors.footerBg} !important; }
+                .brand-title { color: ${config.colors.titleColor} !important; }
+                .text-white { color: ${config.colors.textColor} !important; }
+                a { color: ${config.colors.linkColor} !important; }
+                .bg-red-gradient { background: linear-gradient(135deg, ${config.colors.buttonColor} 0%, ${config.colors.buttonColor}dd 100%) !important; }
+            `;
+            
+            // Remove existing custom styles
+            const existingStyle = document.getElementById('customStyles');
+            if (existingStyle) existingStyle.remove();
+            
+            style.id = 'customStyles';
+            document.head.appendChild(style);
+        }
+
+        function updateSiteInfo() {
+            // Update site name
+            const titleElements = ['siteTitleHeader', 'siteTitleFooter'];
+            titleElements.forEach(id => {
+                const element = document.getElementById(id);
+                if (element) element.textContent = config.siteName;
+            });
+
+            // Update icons
+            const iconElements = ['headerIcon', 'footerIcon', 'currentIcon'];
+            iconElements.forEach(id => {
+                const element = document.getElementById(id);
+                if (element) element.className = config.mainIcon + ' text-white text-2xl';
+            });
+
+            // Update page title
+            document.title = `${config.siteName} - Equipamiento Motociclista Premium`;
+        }
+
+        function updateButtons() {
+            // Update WhatsApp links
+            const whatsappLinks = document.querySelectorAll('[href*="wa.me"]');
+            whatsappLinks.forEach(link => {
+                const href = link.getAttribute('href');
+                const newHref = href.replace(/wa\.me\/506\d+/, `wa.me/506${config.whatsappNumber}`);
+                link.setAttribute('href', newHref);
+            });
+
+            // Update button texts
+            const heroButton = document.getElementById('heroButtonText');
+            if (heroButton) heroButton.textContent = config.buttons.mainWhatsappText;
+
+            const contactWhatsapp = document.getElementById('contactWhatsappText');
+            if (contactWhatsapp) contactWhatsapp.textContent = config.buttons.contactWhatsappText;
+
+            const wazeButton = document.getElementById('wazeButtonTextDisplay');
+            if (wazeButton) wazeButton.textContent = config.buttons.wazeButtonText;
+
+            const wazeLink = document.getElementById('wazeLink');
+            if (wazeLink) wazeLink.setAttribute('href', config.buttons.wazeUrl);
+
+            const promoButton = document.getElementById('promoButtonTextDisplay');
+            if (promoButton) promoButton.textContent = config.buttons.promoButtonText;
+
+            const promoLink = document.getElementById('promoLink');
+            if (promoLink) promoLink.setAttribute('href', config.buttons.promoUrl);
+
+            // Update WhatsApp link
+            const whatsappLink = document.getElementById('whatsappLink');
+            if (whatsappLink) {
+                whatsappLink.setAttribute('href', `https://wa.me/506${config.whatsappNumber}`);
+            }
+
+            // Update contact phone
+            const contactPhone = document.getElementById('contactPhone');
+            if (contactPhone) contactPhone.textContent = `+506 ${config.whatsappNumber}`;
+        }
+
+        function resetToDefault() {
+            config.colors = {
+                bodyBg: "#000000",
+                headerBg: "#000000", 
+                heroBg: "#1f1f1f",
+                productsBg: "#f3f4f6",
+                brandsBg: "#000000",
+                footerBg: "#000000",
+                titleColor: "#dc2626",
+                textColor: "#ffffff",
+                linkColor: "#dc2626",
+                buttonColor: "#dc2626"
+            };
+            
+            loadConfigValues();
+            updateStyles();
+            saveAllData();
+            showNotification('Colores restaurados por defecto', 'success');
+        }
+
+        function saveDesign() {
+            // Get all color values
+            Object.keys(config.colors).forEach(key => {
+                const input = document.getElementById(key);
+                if (input) config.colors[key] = input.value;
+            });
+            
+            updateStyles();
+            saveAllData();
+            showNotification('Diseño guardado exitosamente', 'success');
+        }
+
+        // Logo Management
+        function uploadLogo() {
+            const file = document.getElementById('logoFile').files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    config.customLogo = e.target.result;
+                    updateLogoDisplay();
+                    saveAllData();
+                    showNotification('Logo subido exitosamente', 'success');
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+
+        function uploadFavicon() {
+            const file = document.getElementById('faviconFile').files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    config.favicon = e.target.result;
+                    updateFavicon();
+                    saveAllData();
+                    showNotification('Favicon subido exitosamente', 'success');
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+
+        function updateFavicon() {
+            const svgCode = document.getElementById('faviconSvg').value;
+            if (svgCode) {
+                const encodedSvg = 'data:image/svg+xml,' + encodeURIComponent(svgCode);
+                config.favicon = encodedSvg;
+            }
+            
+            if (config.favicon) {
+                const favicon = document.getElementById('favicon');
+                if (favicon) favicon.href = config.favicon;
+                
+                const preview = document.getElementById('currentFavicon');
+                if (preview) preview.src = config.favicon;
+            }
+        }
+
+        function updateLogoDisplay() {
+            // This would update logo displays if custom logo is implemented
+            showNotification('Vista previa del logo actualizada', 'success');
+        }
+
+        function saveLogos() {
+            const siteName = document.getElementById('siteName').value;
+            const mainIcon = document.getElementById('mainIcon').value;
+            
+            config.siteName = siteName;
+            config.mainIcon = mainIcon;
+            
+            updateSiteInfo();
+            saveAllData();
+            showNotification('Configuración de logos guardada', 'success');
+        }
+
+        // Export Functions
+        function exportForGitHub() {
+            const repoName = document.getElementById('repoName').value;
+            const description = document.getElementById('repoDescription').value;
+            const author = document.getElementById('authorName').value;
+            
+            // Generate the complete HTML
+            const htmlContent = generateCompleteHTML();
+            
+            // Create files
+            const files = {
+                'index.html': htmlContent
+            };
+            
+            if (document.getElementById('includeReadme').checked) {
+                files['README.md'] = generateReadme(repoName, description, author);
+            }
+            
+            if (document.getElementById('includeGitignore').checked) {
+                files['.gitignore'] = generateGitignore();
+            }
+            
+            if (document.getElementById('includeLicense').checked) {
+                files['LICENSE'] = generateLicense(author);
+            }
+            
+            // Download files
+            Object.entries(files).forEach(([filename, content]) => {
+                downloadFile(filename, content);
+            });
+            
+            showNotification('Archivos generados y descargados', 'success');
+            logActivity('Exportación para GitHub completada');
+        }
+
+        function generateCompleteHTML() {
+            // Get current page HTML and clean it up for production
+            let html = document.documentElement.outerHTML;
+            
+            // Remove admin panel and login overlay
+            html = html.replace(/<div id="loginOverlay".*?<\/div>\s*<\/div>/s, '');
+            html = html.replace(/<div id="adminOverlay".*?<\/div>\s*<\/div>/s, '');
+            
+            // Remove admin-related scripts and functions
+            html = html.replace(/\/\* Admin Panel[\s\S]*?\*\//g, '');
+            html = html.replace(//g, '');
+            
+            return html;
+        }
+
+        function generateReadme(repoName, description, author) {
+            return `# ${repoName}
+
+${description}
+
+## Características
+
+- 🏍️ Catálogo completo de equipamiento motociclista
+- 📱 Diseño responsive y moderno
+- 🎨 Interfaz atractiva con gradientes y animaciones
+- 💬 Integración directa con WhatsApp
+- 🗺️ Integración con Waze para ubicación
+- 🔍 Sistema de búsqueda y filtros
+- 📊 Optimizado para SEO
+
+## Tecnologías Utilizadas
+
+- HTML5
+- CSS3 (Tailwind CSS)
+- JavaScript (Vanilla)
+- Font Awesome Icons
+- Google Fonts
+
+## Instalación
+
+1. Clona este repositorio
+2. Abre \`index.html\` en tu navegador
+3. ¡Listo!
+
+## Autor
+
+${author}
+
+## Licencia
+
+Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
+`;
+        }
+
+        function generateGitignore() {
+            return `# Logs
+logs
+*.log
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Directory for instrumented libs generated by jscoverage/JSCover
+lib-cov
+
+# Coverage directory used by tools like istanbul
+coverage
+
+# nyc test coverage
+.nyc_output
+
+# Dependency directories
+node_modules/
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+`;
+        }
+
+        function generateLicense(author) {
+            const year = new Date().getFullYear();
+            return `MIT License
+
+Copyright (c) ${year} ${author}
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+`;
+        }
+
+        function downloadFile(filename, content) {
+            const blob = new Blob([content], { type: 'text/plain' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            window.URL.revokeObjectURL(url);
+        }
+
+        // Backup Functions
+        function createBackup() {
+            const backupData = {
+                products,
+                config,
+                analytics,
+                version: '1.0',
+                created: new Date().toISOString()
+            };
+            
+            const filename = `jackets-master-backup-${new Date().toISOString().split('T')[0]}.json`;
+            downloadFile(filename, JSON.stringify(backupData, null, 2));
+            
+            showNotification('Respaldo creado exitosamente', 'success');
+            logActivity('Respaldo de datos creado');
+        }
+
+        function importBackup() {
+            const file = document.getElementById('importFile').files[0];
+            if (!file) {
+                showNotification('Selecciona un archivo de respaldo', 'warning');
+                return;
+            }
+            
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                try {
+                    const backupData = JSON.parse(e.target.result);
+                    
+                    if (confirm('¿Importar datos? Esto sobrescribirá la información actual.')) {
+                        if (backupData.products) products = backupData.products;
+                        if (backupData.config) config = { ...config, ...backupData.config };
+                        if (backupData.analytics) analytics = { ...analytics, ...backupData.analytics };
+                        
+                        filteredProducts = [...products];
+                        nextProductId = products.length > 0 ? Math.max(...products.map(p => p.id)) + 1 : 1;
+                        
+                        saveAllData();
+                        updateAllDisplays();
+                        initializeApp();
+                        
+                        showNotification('Datos importados exitosamente', 'success');
+                        logActivity('Importación de respaldo completada');
+                    }
+                } catch (error) {
+                    showNotification('Error al importar el archivo', 'error');
+                    console.error('Import error:', error);
+                }
+            };
+            reader.readAsText(file);
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'989338d4a31a1d49',t:'MTc1OTU2NTYyNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
+
+</body></html>
