@@ -6660,27 +6660,45 @@ Thumbs.db
 <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'988656d423d21d49',t:'MTc1OTQzMDU0MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-    // Fuerza la vista de inicio al cargar
-    if (window.location.hash !== "#inicio") {
+    // Siempre fuerza la vista de inicio al cargar
+    if (window.location.hash === "" || window.location.hash === "#inicio") {
         window.location.hash = "#inicio";
+        mostrarInicio();
+    } else if (window.location.hash === "#admin") {
+        mostrarAdminPanel();
     }
-    // El panel admin está oculto al inicio
+    // Opcional: puedes agregar otros hashes si tienes más secciones
+});
+
+function mostrarInicio() {
     const adminPanel = document.getElementById("adminPanel");
     if (adminPanel) adminPanel.style.display = "none";
-});
+}
+
+function mostrarAdminPanel() {
+    const adminPanel = document.getElementById("adminPanel");
+    if (adminPanel) adminPanel.style.display = "block";
+}
 
 // Función para abrir el panel admin (llámala desde el botón "Admin")
 function openAdminPanel() {
-    const adminPanel = document.getElementById("adminPanel");
-    if (adminPanel) adminPanel.style.display = "block";
     window.location.hash = "#admin";
+    mostrarAdminPanel();
 }
 
 // Función para cerrar el panel admin (llámala desde el botón "Cerrar")
 function closeAdminPanel() {
-    const adminPanel = document.getElementById("adminPanel");
-    if (adminPanel) adminPanel.style.display = "none";
     window.location.hash = "#inicio";
+    mostrarInicio();
 }
+
+// Si el usuario cambia el hash manualmente, reacciona en tiempo real
+window.addEventListener("hashchange", () => {
+    if (window.location.hash === "#admin") {
+        mostrarAdminPanel();
+    } else {
+        mostrarInicio();
+    }
+});
 </script>
 </body></html>
