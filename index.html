@@ -6662,51 +6662,35 @@ Thumbs.db
 document.addEventListener("DOMContentLoaded", () => {
     const adminPanel = document.getElementById("adminPanel");
     const adminLoginModal = document.getElementById("adminLogin");
+    const isLoggedIn = localStorage.getItem("adminLoggedIn") === "true";
 
-    function updateAdminView() {
-        const isLoggedIn = localStorage.getItem("adminLoggedIn") === "true";
-        const hash = window.location.hash;
-
-        if (!isLoggedIn && hash === "#admin") {
-            window.location.hash = "#inicio";
-            alert("Debes iniciar sesión para hacer cambios.");
-        }
-
-        if (!isLoggedIn) {
-            if (adminPanel) adminPanel.style.display = "none";
-            if (adminLoginModal) adminLoginModal.classList.remove("hidden");
-        } else {
-            if (adminPanel) adminPanel.style.display = "block";
-            if (adminLoginModal) adminLoginModal.classList.add("hidden");
-        }
+    // --- Mostrar/Ocultar según sesión ---
+    if (isLoggedIn) {
+        if (adminPanel) adminPanel.style.display = "block";
+        if (adminLoginModal) adminLoginModal.classList.add("hidden");
+    } else {
+        if (adminPanel) adminPanel.style.display = "none";
+        if (adminLoginModal) adminLoginModal.classList.remove("hidden");
     }
-
-    // Ejecutar al inicio
-    updateAdminView();
-
-    // Observar cambios dinámicos (hash o login)
-    window.addEventListener("hashchange", updateAdminView);
-    window.addEventListener("storage", updateAdminView);
 });
 
-// Login admin
+// --- Login (activar panel) ---
 function adminLogin(event) {
     event.preventDefault();
     localStorage.setItem("adminLoggedIn", "true");
-    window.location.hash = "#admin";
-    // No recargamos, solo actualizamos vista
     const adminPanel = document.getElementById("adminPanel");
     const adminLoginModal = document.getElementById("adminLogin");
     if (adminPanel) adminPanel.style.display = "block";
     if (adminLoginModal) adminLoginModal.classList.add("hidden");
 }
 
-// Cerrar sesión
+// --- Logout (cerrar panel y sesión) ---
 function closeAdminPanel() {
     localStorage.setItem("adminLoggedIn", "false");
     const adminPanel = document.getElementById("adminPanel");
+    const adminLoginModal = document.getElementById("adminLogin");
     if (adminPanel) adminPanel.style.display = "none";
-    window.location.hash = "#inicio";
+    if (adminLoginModal) adminLoginModal.classList.remove("hidden");
 }
 </script>
 
