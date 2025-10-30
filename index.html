@@ -6708,5 +6708,13 @@ function adminLogin(event) {
     if (adminLoginModal) adminLoginModal.classList.add("hidden");
     window.location.hash = "#admin";
 }
+
+// NUEVA FUNCIÓN para cerrar el panel admin y cerrar sesión
+function closeAdminPanel() {
+    localStorage.setItem("adminLoggedIn", "false");
+    const adminPanel = document.getElementById("adminPanel");
+    if (adminPanel) adminPanel.style.display = "none";
+    window.location.hash = "#inicio";
+}
 </script>
 </body></html>
