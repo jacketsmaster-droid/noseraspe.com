@@ -6660,22 +6660,22 @@ Thumbs.db
 <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'988656d423d21d49',t:'MTc1OTQzMDU0MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-    // --- Forzar vista de inicio ---
+    // --- Forzar vista de inicio o admin solo si corresponde ---
     const hash = window.location.hash;
-    if (hash !== "#inicio") {
-        window.location.hash = "#inicio";
-    }
-
-    // --- Ocultar panel admin si no hay sesión ---
+    const isLoggedIn = localStorage.getItem("adminLoggedIn") === "true";
     const adminPanel = document.getElementById("adminPanel");
     const adminLoginModal = document.getElementById("adminLogin");
-    const isLoggedIn = localStorage.getItem("adminLoggedIn") === "true";
 
+    // Permitir solo #inicio y #admin
+    if (!isLoggedIn && hash !== "#inicio") {
+        window.location.hash = "#inicio";
+    }
+    if (isLoggedIn && hash !== "#admin") {
+        window.location.hash = "#admin";
+    }
+
+    // --- Mostrar/Ocultar panel admin según sesión ---
     if (!isLoggedIn) {
-        // Si intenta abrir directamente el admin, lo devuelve a inicio
-        if (window.location.hash.includes("admin")) {
-            window.location.hash = "#inicio";
-        }
         if (adminPanel) adminPanel.style.display = "none";
         if (adminLoginModal) adminLoginModal.classList.add("hidden");
     } else {
@@ -6686,10 +6686,14 @@ document.addEventListener("DOMContentLoaded", () => {
     // --- Evita abrir admin desde consola o URL ---
     const observer = new MutationObserver(() => {
         const isLoggedInNow = localStorage.getItem("adminLoggedIn") === "true";
-        if (!isLoggedInNow && (window.location.hash.includes("admin") || window.location.pathname.includes("admin"))) {
+        const hashNow = window.location.hash;
+        // Si no está logueado y hash es admin, redirige a inicio
+        if (!isLoggedInNow && hashNow === "#admin") {
             window.location.hash = "#inicio";
             alert("Acceso no autorizado.");
-        } else if (isLoggedInNow && (window.location.hash.includes("admin") || window.location.pathname.includes("admin"))) {
+        }
+        // Si está logueado y hash es admin, muestra el panel
+        if (isLoggedInNow && hashNow === "#admin") {
             if (adminPanel) adminPanel.style.display = "block";
             if (adminLoginModal) adminLoginModal.classList.add("hidden");
         }
@@ -6702,11 +6706,9 @@ function adminLogin(event) {
     event.preventDefault();
     // Tu lógica de validación aquí...
     localStorage.setItem("adminLoggedIn", "true");
-    const adminPanel = document.getElementById("adminPanel");
-    const adminLoginModal = document.getElementById("adminLogin");
-    if (adminPanel) adminPanel.style.display = "block";
-    if (adminLoginModal) adminLoginModal.classList.add("hidden");
+    // Recarga y manda al admin para asegurar el sincronismo
     window.location.hash = "#admin";
+    location.reload();
 }
 
 // NUEVA FUNCIÓN para cerrar el panel admin y cerrar sesión
