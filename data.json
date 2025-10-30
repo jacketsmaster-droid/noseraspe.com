@@ -1,0 +1,433 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Hyper Tec 2.0 Cortech",
+      "price": 179990,
+      "category": "chaquetas",
+      "brand": "alpinestars",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "description": "Jacket de cuero premium para racing con protecciones CE y diseño aerodinámico.",
+      "image": "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/products/product_items/Cortech-HYPER-TEC-jkt-blk-front1706653501-1663921.png",
+      "importedAt": "2025-10-29T15:23:13.913Z",
+      "images": [
+        "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/products/product_items/Cortech-HYPER-TEC-jkt-blk-front1706653501-1663921.png"
+      ],
+      "lastModified": "2025-10-29T18:05:59.656Z",
+      "modificationHistory": [
+        {
+          "date": "2025-10-29T18:04:03.049Z",
+          "changes": [
+            "Nombre: \"Jacket Racing Pro\" → \"Hyper Tec 2.0 Cortech\""
+          ],
+          "user": "admin"
+        },
+        {
+          "date": "2025-10-29T18:05:59.656Z",
+          "changes": [
+            "Imagen actualizada"
+          ],
+          "user": "admin"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Draft Black",
+      "price": 54990,
+      "category": "guantes",
+      "brand": "tourmaster",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "description": "Guantes impermeables con protección en nudillos y palma reforzada.",
+      "image": "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/products/product_items/Draft%20Air%20Gloves%20-%20Black1723591335-3699052.png",
+      "importedAt": "2025-10-29T15:23:13.913Z",
+      "images": [
+        "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/products/product_items/Draft%20Air%20Gloves%20-%20Black1723591335-3699052.png"
+      ],
+      "lastModified": "2025-10-29T18:05:31.161Z",
+      "modificationHistory": [
+        {
+          "date": "2025-10-29T18:05:14.665Z",
+          "changes": [
+            "Nombre: \"Guantes Touring Comfort\" → \"Draft Black\"",
+            "Tallas: S, M, L, XL → S, M, L, XL, XXL",
+            "Imagen actualizada"
+          ],
+          "user": "admin"
+        },
+        {
+          "date": "2025-10-29T18:05:31.161Z",
+          "changes": [
+            "Imagen actualizada"
+          ],
+          "user": "admin"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Mariner Black Pant",
+      "price": 119990,
+      "category": "pantalones",
+      "brand": "cortech",
+      "sizes": [
+        "30",
+        "32",
+        "34",
+        "36",
+        "38"
+      ],
+      "description": "Pantalones con refuerzos de kevlar y protecciones removibles en rodillas.",
+      "image": "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/images/products/list_image/8812-0105-04web1664583525-3361161.jpg",
+      "importedAt": "2025-10-29T15:23:13.913Z",
+      "images": [
+        "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/images/products/list_image/8812-0105-04web1664583525-3361161.jpg"
+      ],
+      "lastModified": "2025-10-29T18:07:07.513Z",
+      "modificationHistory": [
+        {
+          "date": "2025-10-29T18:06:41.914Z",
+          "changes": [
+            "Nombre: \"Pantalones Kevlar Pro\" → \"Mariner Black Pant\"",
+            "Imagen actualizada"
+          ],
+          "user": "admin"
+        },
+        {
+          "date": "2025-10-29T18:07:07.513Z",
+          "changes": [
+            "Imagen actualizada"
+          ],
+          "user": "admin"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Rodilleras Fox D30 Titan Pro",
+      "price": 27990,
+      "category": "rodilleras",
+      "brand": "noru",
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "description": "Protección para rodillas con sistema de ventilación y ajuste ergonómico.",
+      "image": "https://allroad.com.uy/wp-content/uploads/2023/08/RO-1.jpg",
+      "importedAt": "2025-10-29T15:23:13.913Z",
+      "images": [
+        "https://allroad.com.uy/wp-content/uploads/2023/08/RO-1.jpg"
+      ],
+      "lastModified": "2025-10-29T19:17:42.340Z",
+      "modificationHistory": [
+        {
+          "date": "2025-10-29T19:17:42.340Z",
+          "changes": [
+            "Nombre: \"Rodilleras Deportivas\" → \"Rodilleras Fox D30 Titan Pro\"",
+            "Imagen actualizada"
+          ],
+          "user": "admin"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Protecciones Espalda (Solo jackets de nuestra tienda)",
+      "price": 20000,
+      "category": "protecciones",
+      "brand": "alpinestars",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "description": "Protector de espalda CE nivel 2 con sistema de ventilación.",
+      "image": "https://m.media-amazon.com/images/I/71NEvWUOUSL._AC_UF894,1000_QL80_.jpg",
+      "importedAt": "2025-10-29T15:23:13.913Z",
+      "images": [
+        "https://m.media-amazon.com/images/I/71NEvWUOUSL._AC_UF894,1000_QL80_.jpg"
+      ],
+      "lastModified": "2025-10-29T19:18:50.796Z",
+      "modificationHistory": [
+        {
+          "date": "2025-10-29T19:18:50.796Z",
+          "changes": [
+            "Nombre: \"Protecciones Espalda\" → \"Protecciones Espalda (Solo jackets de nuestra tienda)\"",
+            "Precio: ₡79.990 → ₡20.000",
+            "Descripción actualizada",
+            "Imagen actualizada"
+          ],
+          "user": "admin"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Bolso Tanque Magnético 12L",
+      "price": 47990,
+      "category": "bolsos",
+      "brand": "tourmaster",
+      "sizes": [
+        "Único"
+      ],
+      "description": "Bolso magnético para tanque con compartimentos impermeables y ventana táctil.",
+      "image": "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/images/products/images/8230-0505-12map1615489742-38980.jpg",
+      "importedAt": "2025-10-29T15:23:13.913Z",
+      "images": [
+        "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/images/products/images/8230-0505-12map1615489742-38980.jpg"
+      ],
+      "lastModified": "2025-10-29T19:19:32.516Z",
+      "modificationHistory": [
+        {
+          "date": "2025-10-29T19:19:23.708Z",
+          "changes": [
+            "Nombre: \"Bolso Tanque Magnético\" → \"Bolso Tanque Magnético 12L\"",
+            "Imagen actualizada"
+          ],
+          "user": "admin"
+        },
+        {
+          "date": "2025-10-29T19:19:32.516Z",
+          "changes": [
+            "Imagen actualizada"
+          ],
+          "user": "admin"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Liner Térmico Invierno",
+      "price": 23990,
+      "category": "liner",
+      "brand": "cortech",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "description": "Forro térmico removible para jackets con tecnología de regulación térmica.",
+      "image": "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/images/products/images/7318-2105-03fntangweb1649281716-27434.jpg",
+      "importedAt": "2025-10-29T15:23:13.913Z",
+      "images": [
+        "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/images/products/images/7318-2105-03fntangweb1649281716-27434.jpg"
+      ],
+      "lastModified": "2025-10-29T19:19:53.644Z",
+      "modificationHistory": [
+        {
+          "date": "2025-10-29T19:19:53.644Z",
+          "changes": [
+            "Imagen actualizada"
+          ],
+          "user": "admin"
+        }
+      ]
+    },
+    {
+      "id": 1760808004406,
+      "name": "Aero-Tec 2.0 Cortech Jkt Black",
+      "price": 179990,
+      "category": "chaquetas",
+      "brand": "cortech",
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "description": "j,lui7utk7rir7k",
+      "image": "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/products/product_items/Cortech-AEROTEC-Jacket-Blk-Front1706661434-16463341720570258-428202.png",
+      "images": [
+        "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/products/product_items/Cortech-AEROTEC-Jacket-Blk-Front1706661434-16463341720570258-428202.png"
+      ],
+      "active": true,
+      "createdAt": "2025-10-18T17:20:04.407Z",
+      "lastModified": "2025-10-29T19:20:26.604Z",
+      "views": 3,
+      "inquiries": 0,
+      "modificationHistory": [
+        {
+          "date": "2025-10-18T17:20:04.407Z",
+          "changes": [
+            "Producto creado"
+          ],
+          "user": "admin"
+        },
+        {
+          "date": "2025-10-18T17:25:31.292Z",
+          "changes": [
+            "Descripción actualizada",
+            "Imagen actualizada"
+          ],
+          "user": "admin"
+        },
+        {
+          "date": "2025-10-29T19:20:26.604Z",
+          "changes": [
+            "Imagen actualizada"
+          ],
+          "user": "admin"
+        }
+      ],
+      "lastViewed": "2025-10-23T23:40:33.443Z",
+      "importedAt": "2025-10-29T15:23:13.913Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "chaquetas",
+      "name": "Jackets",
+      "active": true,
+      "importedAt": "2025-10-29T15:23:13.913Z"
+    },
+    {
+      "id": "guantes",
+      "name": "Guantes",
+      "active": true,
+      "importedAt": "2025-10-29T15:23:13.913Z"
+    },
+    {
+      "id": "pantalones",
+      "name": "Pantalones",
+      "active": true,
+      "importedAt": "2025-10-29T15:23:13.913Z"
+    },
+    {
+      "id": "rodilleras",
+      "name": "Rodilleras",
+      "active": true,
+      "importedAt": "2025-10-29T15:23:13.913Z"
+    },
+    {
+      "id": "protecciones",
+      "name": "Protecciones",
+      "active": true,
+      "importedAt": "2025-10-29T15:23:13.913Z"
+    },
+    {
+      "id": "bolsos",
+      "name": "Bolsos",
+      "active": true,
+      "importedAt": "2025-10-29T15:23:13.913Z"
+    },
+    {
+      "id": "liner",
+      "name": "Liner",
+      "active": true,
+      "importedAt": "2025-10-29T15:23:13.913Z"
+    },
+    {
+      "id": "hidden",
+      "name": "Productos Eliminados",
+      "active": false,
+      "importedAt": "2025-10-29T15:23:13.913Z"
+    }
+  ],
+  "brands": [
+    {
+      "id": "cortech",
+      "name": "Cortech",
+      "description": "Tecnología avanzada para el motociclista moderno",
+      "logo": "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/cortech/cortech_header_logo.svg",
+      "active": true,
+      "importedAt": "2025-10-29T15:23:13.913Z"
+    },
+    {
+      "id": "alpinestars",
+      "name": "Alpinestars",
+      "description": "Herencia en carreras y protección premium",
+      "logo": "data:image/png;base64,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",
+      "active": true,
+      "importedAt": "2025-10-29T15:23:13.913Z"
+    },
+    {
+      "id": "tourmaster",
+      "name": "TourMaster",
+      "description": "Equipamiento para grandes aventuras",
+      "logo": "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/tourmaster/tourmaster_logo_on-light.svg",
+      "active": true,
+      "importedAt": "2025-10-29T15:23:13.913Z"
+    },
+    {
+      "id": "noru",
+      "name": "Noru",
+      "description": "Innovación y diseño de vanguardia",
+      "logo": "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/noru/noru_1color_black_web.svg",
+      "active": true,
+      "importedAt": "2025-10-29T15:23:13.913Z"
+    },
+    {
+      "id": "joerocket",
+      "name": "Joe Rocket",
+      "description": "De las primeras marcas que surgieron en equipo de moto",
+      "logo": "https://images.squarespace-cdn.com/content/v1/576c713e03596ed61e897dc6/1540834635957-7J0YC0GHIPK9YJXWUBUH/Rocket-Color-Logo.png?format=500w",
+      "active": true
+    }
+  ],
+  "theme": {
+    "background": {
+      "type": "gradient",
+      "value": "#9ca3af",
+      "gradient": "linear-gradient(135deg, #9ca3af 0%, #6b7280 100%)",
+      "image": "https://img.freepik.com/vector-gratis/fondo-oscuro-formas-hexagonales_1048-2713.jpg?semt=ais_hybrid&w=740&q=80"
+    },
+    "cardBackground": "#f3f4f6",
+    "primaryColor": "#ff0000",
+    "secondaryColor": "#000000",
+    "textColor": "#374151",
+    "buttonColor": "#dc2626",
+    "customLogo": "https://images.vexels.com/media/users/3/243502/isolated/preview/2538d955e76a172308979f140f69384e-juego-de-moto-4.png",
+    "heroBackground": {
+      "type": "gradient",
+      "value": "",
+      "gradient": "linear-gradient(135deg, #374151 0%, #1f2937 100%)",
+      "image": "",
+      "textBg": {
+        "image": "https://img.freepik.com/vector-gratis/fondo-oscuro-formas-hexagonales_1048-2713.jpg?semt=ais_hybrid&w=740&q=80",
+        "opacity": "10",
+        "size": "contain"
+      }
+    },
+    "importedAt": "2025-10-29T15:23:13.913Z",
+    "customFavicon": "https://i1.sndcdn.com/avatars-EsgrQt2xT0wROfEI-fwKs0g-t240x240.jpg"
+  },
+  "texts": {
+    "heroTitle": "Equipo de Seguridad Premium",
+    "heroSubtitle": "Descubra nuestra colección de equipo de motociclista de alta calidad. Protección, estilo y durabilidad en cada prenda para cada curva.",
+    "navInicio": "INICIO",
+    "navProductos": "CATÁLOGO",
+    "navContacto": "CONTACTO",
+    "productsTitle": "NUESTROS PRODUCTOS",
+    "brandsTitle": "NUESTRAS MARCAS",
+    "contactTitle": "CONTÁCTANOS",
+    "importedAt": "2025-10-29T15:23:13.913Z"
+  },
+  "links": {
+    "whatsappCatalog": {
+      "text": "CATÁLOGO WHATSAPP",
+      "url": "https://wa.me/c/50688845533"
+    },
+    "whatsappChannel": {
+      "text": "CANAL PROMOCIONES",
+      "url": "https://whatsapp.com/channel/0029VbBv0Wk59PwXaRqS6C2d"
+    },
+    "waze": {
+      "text": "ABRIR EN WAZE",
+      "url": "https://waze.com/ul/hd1u0rps2s"
+    }
+  },
+  "exportDate": "2025-10-30T17:54:44.715Z"
+}
