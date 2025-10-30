@@ -6658,58 +6658,17 @@ Thumbs.db
         document.head.appendChild(bodyStyle);
     </script>
 <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'988656d423d21d49',t:'MTc1OTQzMDU0MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
+<!-- ... todo tu contenido html ... -->
+
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-    const adminPanel = document.getElementById("adminPanel");
-    const adminLoginModal = document.getElementById("adminLogin");
+    // Solo fuerza la vista a #inicio si NO está logeado
     const isLoggedIn = localStorage.getItem("adminLoggedIn") === "true";
-
-    // --- Forzar vista inicial segura ---
     if (!isLoggedIn) {
-        // Siempre arrancar en inicio si no hay sesión
-        if (window.location.hash !== "#inicio") {
-            window.location.hash = "#inicio";
-        }
-        if (adminPanel) adminPanel.classList.remove("active");
-        if (adminLoginModal) adminLoginModal.classList.add("hidden");
-    } else {
-        // Si hay sesión activa, permitir acceso a admin
-        if (window.location.hash !== "#admin") {
-            window.location.hash = "#admin";
-        }
-        if (adminPanel) adminPanel.classList.add("active");
-        if (adminLoginModal) adminLoginModal.classList.add("hidden");
+        window.location.hash = "#inicio";
     }
 });
-
-// --- Función de login ---
-function adminLogin(event) {
-    event.preventDefault();
-    localStorage.setItem("adminLoggedIn", "true");
-    const adminPanel = document.getElementById("adminPanel");
-    const adminLoginModal = document.getElementById("adminLogin");
-
-    // Mostrar panel y ocultar modal
-    if (adminPanel) adminPanel.classList.add("active");
-    if (adminLoginModal) adminLoginModal.classList.add("hidden");
-
-    // Redirigir a sección admin
-    window.location.hash = "#admin";
-}
-
-// --- Cerrar sesión ---
-function closeAdminPanel() {
-    localStorage.setItem("adminLoggedIn", "false");
-    const adminPanel = document.getElementById("adminPanel");
-    const adminLoginModal = document.getElementById("adminLogin");
-
-    // Ocultar panel y cerrar sesión
-    if (adminPanel) adminPanel.classList.remove("active");
-    if (adminLoginModal) adminLoginModal.classList.add("hidden");
-
-    // Redirigir siempre al inicio
-    window.location.hash = "#inicio";
-}
 </script>
-
+</body>
+</html>
 </body></html>
