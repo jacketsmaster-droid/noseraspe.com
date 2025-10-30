@@ -312,7 +312,7 @@
     </div>
 
     <!-- Admin Login Modal -->
-    <div id="adminLogin" class="fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center hidden">
+<div id="adminPanel" class="admin-panel fixed inset-0 bg-gray-400 motorcycle-pattern z-40 overflow-y-auto">
         <div class="glass-effect p-8 rounded-xl shadow-2xl max-w-md w-full mx-4 text-white">
             <h3 class="section-title text-3xl mb-8 text-center">ACCESO ADMIN</h3>
             <form onsubmit="adminLogin(event)">
@@ -6670,14 +6670,14 @@ document.addEventListener("DOMContentLoaded", () => {
         if (window.location.hash !== "#inicio") {
             window.location.hash = "#inicio";
         }
-        if (adminPanel) adminPanel.style.display = "none";
+        if (adminPanel) adminPanel.classList.remove("active");
         if (adminLoginModal) adminLoginModal.classList.add("hidden");
     } else {
         // Si hay sesión activa, permitir acceso a admin
         if (window.location.hash !== "#admin") {
             window.location.hash = "#admin";
         }
-        if (adminPanel) adminPanel.style.display = "block";
+        if (adminPanel) adminPanel.classList.add("active");
         if (adminLoginModal) adminLoginModal.classList.add("hidden");
     }
 });
@@ -6690,7 +6690,7 @@ function adminLogin(event) {
     const adminLoginModal = document.getElementById("adminLogin");
 
     // Mostrar panel y ocultar modal
-    if (adminPanel) adminPanel.style.display = "block";
+    if (adminPanel) adminPanel.classList.add("active");
     if (adminLoginModal) adminLoginModal.classList.add("hidden");
 
     // Redirigir a sección admin
@@ -6704,7 +6704,7 @@ function closeAdminPanel() {
     const adminLoginModal = document.getElementById("adminLogin");
 
     // Ocultar panel y cerrar sesión
-    if (adminPanel) adminPanel.style.display = "none";
+    if (adminPanel) adminPanel.classList.remove("active");
     if (adminLoginModal) adminLoginModal.classList.add("hidden");
 
     // Redirigir siempre al inicio
