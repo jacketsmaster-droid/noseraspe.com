@@ -6664,33 +6664,51 @@ document.addEventListener("DOMContentLoaded", () => {
     const adminLoginModal = document.getElementById("adminLogin");
     const isLoggedIn = localStorage.getItem("adminLoggedIn") === "true";
 
-    // --- Mostrar/Ocultar según sesión ---
-    if (isLoggedIn) {
-        if (adminPanel) adminPanel.style.display = "block";
+    // --- Forzar vista inicial segura ---
+    if (!isLoggedIn) {
+        // Siempre arrancar en inicio si no hay sesión
+        if (window.location.hash !== "#inicio") {
+            window.location.hash = "#inicio";
+        }
+        if (adminPanel) adminPanel.style.display = "none";
         if (adminLoginModal) adminLoginModal.classList.add("hidden");
     } else {
-        if (adminPanel) adminPanel.style.display = "none";
-        if (adminLoginModal) adminLoginModal.classList.remove("hidden");
+        // Si hay sesión activa, permitir acceso a admin
+        if (window.location.hash !== "#admin") {
+            window.location.hash = "#admin";
+        }
+        if (adminPanel) adminPanel.style.display = "block";
+        if (adminLoginModal) adminLoginModal.classList.add("hidden");
     }
 });
 
-// --- Login (activar panel) ---
+// --- Función de login ---
 function adminLogin(event) {
     event.preventDefault();
     localStorage.setItem("adminLoggedIn", "true");
     const adminPanel = document.getElementById("adminPanel");
     const adminLoginModal = document.getElementById("adminLogin");
+
+    // Mostrar panel y ocultar modal
     if (adminPanel) adminPanel.style.display = "block";
     if (adminLoginModal) adminLoginModal.classList.add("hidden");
+
+    // Redirigir a sección admin
+    window.location.hash = "#admin";
 }
 
-// --- Logout (cerrar panel y sesión) ---
+// --- Cerrar sesión ---
 function closeAdminPanel() {
     localStorage.setItem("adminLoggedIn", "false");
     const adminPanel = document.getElementById("adminPanel");
     const adminLoginModal = document.getElementById("adminLogin");
+
+    // Ocultar panel y cerrar sesión
     if (adminPanel) adminPanel.style.display = "none";
-    if (adminLoginModal) adminLoginModal.classList.remove("hidden");
+    if (adminLoginModal) adminLoginModal.classList.add("hidden");
+
+    // Redirigir siempre al inicio
+    window.location.hash = "#inicio";
 }
 </script>
 
