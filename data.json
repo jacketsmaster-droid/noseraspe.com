@@ -1,0 +1,1581 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Hyper Tec 2.0 Cortech",
+      "price": 118500,
+      "category": "jackets",
+      "brand": "alpinestars",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "description": "Jacket textil impermeable y térmica",
+      "image": "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/products/product_items/Cortech-HYPER-TEC-jkt-blk-front1706653501-1663921.png",
+      "importedAt": "2025-10-29T15:23:13.913Z",
+      "images": [
+        "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/products/product_items/Cortech-HYPER-TEC-jkt-blk-front1706653501-1663921.png"
+      ],
+      "lastModified": "2025-11-03T17:25:28.106Z",
+      "modificationHistory": [
+        {
+          "date": "2025-10-29T18:04:03.049Z",
+          "changes": [
+            "Nombre: \"Jacket Racing Pro\" → \"Hyper Tec 2.0 Cortech\""
+          ],
+          "user": "admin"
+        },
+        {
+          "date": "2025-10-29T18:05:59.656Z",
+          "changes": [
+            "Imagen actualizada"
+          ],
+          "user": "admin"
+        },
+        {
+          "date": "2025-10-30T21:45:34.044Z",
+          "changes": [
+            "Precio: ₡179.990 → ₡118.500"
+          ],
+          "user": "admin"
+        },
+        {
+          "date": "2025-10-30T23:02:45.785Z",
+          "changes": [
+            "Producto actualizado"
+          ],
+          "user": "admin"
+        },
+        {
+          "date": "2025-10-30T23:03:11.895Z",
+          "changes": [
+            "Producto actualizado"
+          ],
+          "user": "admin"
+        },
+        {
+          "date": "2025-10-30T23:03:27.976Z",
+          "changes": [
+            "Producto actualizado"
+          ],
+          "user": "admin"
+        },
+        {
+          "date": "2025-11-01T16:16:48.182Z",
+          "changes": [
+            "Producto actualizado"
+          ],
+          "user": "admin"
+        },
+        {
+          "date": "2025-11-01T19:01:21.309Z",
+          "changes": [
+            "Tallas: S, M, L, XL → S, M, L, XL, XXL"
+          ],
+          "user": "admin"
+        },
+        {
+          "date": "2025-11-03T17:25:28.106Z",
+          "changes": [
+            "Descripción actualizada"
+          ],
+          "user": "admin"
+        }
+      ],
+      "views": 3,
+      "lastViewed": "2025-11-01T19:00:36.315Z"
+    },
+    {
+      "id": 2,
+      "name": "Draft Black",
+      "price": 19700,
+      "category": "guantes",
+      "brand": "tourmaster",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "description": "Guantes no impermeables con protección en nudillos ventilados",
+      "image": "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/products/product_items/Draft%20Air%20Gloves%20-%20Black1723591335-3699052.png",
+      "importedAt": "2025-10-29T15:23:13.913Z",
+      "images": [
+        "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/products/product_items/Draft%20Air%20Gloves%20-%20Black1723591335-3699052.png"
+      ],
+      "lastModified": "2025-11-03T17:25:46.786Z",
+      "modificationHistory": [
+        {
+          "date": "2025-10-29T18:05:14.665Z",
+          "changes": [
+            "Nombre: \"Guantes Touring Comfort\" → \"Draft Black\"",
+            "Tallas: S, M, L, XL → S, M, L, XL, XXL",
+            "Imagen actualizada"
+          ],
+          "user": "admin"
+        },
+        {
+          "date": "2025-10-29T18:05:31.161Z",
+          "changes": [
+            "Imagen actualizada"
+          ],
+          "user": "admin"
+        },
+        {
+          "date": "2025-10-30T21:45:45.099Z",
+          "changes": [
+            "Precio: ₡54.990 → ₡19.700"
+          ],
+          "user": "admin"
+        },
+        {
+          "date": "2025-11-03T17:25:46.786Z",
+          "changes": [
+            "Descripción actualizada"
+          ],
+          "user": "admin"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Mariner Black Pant",
+      "price": 127500,
+      "category": "pantalones",
+      "brand": "cortech",
+      "sizes": [
+        "30",
+        "32",
+        "34",
+        "36",
+        "38"
+      ],
+      "description": "Pantalon imermeable con refuerzos y protecciones removibles en rodillas.",
+      "image": "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/images/products/list_image/8812-0105-04web1664583525-3361161.jpg",
+      "importedAt": "2025-10-29T15:23:13.913Z",
+      "images": [
+        "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/images/products/list_image/8812-0105-04web1664583525-3361161.jpg"
+      ],
+      "lastModified": "2025-11-03T17:26:10.163Z",
+      "modificationHistory": [
+        {
+          "date": "2025-10-29T18:06:41.914Z",
+          "changes": [
+            "Nombre: \"Pantalones Kevlar Pro\" → \"Mariner Black Pant\"",
+            "Imagen actualizada"
+          ],
+          "user": "admin"
+        },
+        {
+          "date": "2025-10-29T18:07:07.513Z",
+          "changes": [
+            "Imagen actualizada"
+          ],
+          "user": "admin"
+        },
+        {
+          "date": "2025-10-30T21:45:57.443Z",
+          "changes": [
+            "Precio: ₡119.990 → ₡127.500"
+          ],
+          "user": "admin"
+        },
+        {
+          "date": "2025-11-03T17:26:10.163Z",
+          "changes": [
+            "Descripción actualizada"
+          ],
+          "user": "admin"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Rodilleras Fox D30 Titan Pro",
+      "price": 94800,
+      "category": "rodilleras",
+      "brand": "fox",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "description": "Protección para rodillas con sistema de ventilación y ajuste ergonómico.",
+      "image": "https://allroad.com.uy/wp-content/uploads/2023/08/RO-1.jpg",
+      "importedAt": "2025-10-29T15:23:13.913Z",
+      "images": [
+        "https://allroad.com.uy/wp-content/uploads/2023/08/RO-1.jpg"
+      ],
+      "lastModified": "2025-11-03T17:26:26.018Z",
+      "modificationHistory": [
+        {
+          "date": "2025-10-29T19:17:42.340Z",
+          "changes": [
+            "Nombre: \"Rodilleras Deportivas\" → \"Rodilleras Fox D30 Titan Pro\"",
+            "Imagen actualizada"
+          ],
+          "user": "admin"
+        },
+        {
+          "date": "2025-10-30T21:46:19.516Z",
+          "changes": [
+            "Precio: ₡27.990 → ₡94.800",
+            "Marca: noru → cortech"
+          ],
+          "user": "admin"
+        },
+        {
+          "date": "2025-10-30T21:49:47.732Z",
+          "changes": [
+            "Marca: cortech → fox"
+          ],
+          "user": "admin"
+        },
+        {
+          "date": "2025-11-03T17:26:26.018Z",
+          "changes": [
+            "Tallas: S, M, L → S, M, L, XL"
+          ],
+          "user": "admin"
+        }
+      ],
+      "views": 1,
+      "lastViewed": "2025-11-03T19:29:15.503Z"
+    },
+    {
+      "id": 5,
+      "name": "Protecciones Espalda (Solo jackets de nuestra tienda)",
+      "price": 20000,
+      "category": "protecciones",
+      "brand": "alpinestars",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "description": "Protector de espalda CE nivel 2 con sistema de ventilación.",
+      "image": "https://m.media-amazon.com/images/I/71NEvWUOUSL._AC_UF894,1000_QL80_.jpg",
+      "importedAt": "2025-10-29T15:23:13.913Z",
+      "images": [
+        "https://m.media-amazon.com/images/I/71NEvWUOUSL._AC_UF894,1000_QL80_.jpg"
+      ],
+      "lastModified": "2025-10-29T19:18:50.796Z",
+      "modificationHistory": [
+        {
+          "date": "2025-10-29T19:18:50.796Z",
+          "changes": [
+            "Nombre: \"Protecciones Espalda\" → \"Protecciones Espalda (Solo jackets de nuestra tienda)\"",
+            "Precio: ₡79.990 → ₡20.000",
+            "Descripción actualizada",
+            "Imagen actualizada"
+          ],
+          "user": "admin"
+        }
+      ],
+      "active": false
+    },
+    {
+      "id": 6,
+      "name": "Bolso Tanque Magnético 12L",
+      "price": 47990,
+      "category": "maletines",
+      "brand": "tourmaster",
+      "sizes": [
+        "Único"
+      ],
+      "description": "Bolso magnético para tanque con compartimentos impermeables y ventana para celular.",
+      "image": "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/images/products/images/8230-0505-12map1615489742-38980.jpg",
+      "importedAt": "2025-10-29T15:23:13.913Z",
+      "images": [
+        "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/images/products/images/8230-0505-12map1615489742-38980.jpg"
+      ],
+      "lastModified": "2025-11-03T17:27:02.314Z",
+      "modificationHistory": [
+        {
+          "date": "2025-10-29T19:19:23.708Z",
+          "changes": [
+            "Nombre: \"Bolso Tanque Magnético\" → \"Bolso Tanque Magnético 12L\"",
+            "Imagen actualizada"
+          ],
+          "user": "admin"
+        },
+        {
+          "date": "2025-10-29T19:19:32.516Z",
+          "changes": [
+            "Imagen actualizada"
+          ],
+          "user": "admin"
+        },
+        {
+          "date": "2025-11-03T17:27:02.314Z",
+          "changes": [
+            "Descripción actualizada"
+          ],
+          "user": "admin"
+        }
+      ],
+      "inquiries": 1,
+      "lastInquiry": "2025-11-01T20:29:38.288Z"
+    },
+    {
+      "id": 7,
+      "name": "Liner Térmico Invierno",
+      "price": 18000,
+      "category": "jackets",
+      "brand": "cortech",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "description": "Forro térmico removible para jackets con tecnología de regulación térmica.",
+      "image": "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/images/products/images/7318-2105-03fntangweb1649281716-27434.jpg",
+      "importedAt": "2025-10-29T15:23:13.913Z",
+      "images": [
+        "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/images/products/images/7318-2105-03fntangweb1649281716-27434.jpg"
+      ],
+      "lastModified": "2025-11-03T17:27:39.138Z",
+      "modificationHistory": [
+        {
+          "date": "2025-10-29T19:19:53.644Z",
+          "changes": [
+            "Imagen actualizada"
+          ],
+          "user": "admin"
+        },
+        {
+          "date": "2025-11-03T17:27:39.138Z",
+          "changes": [
+            "Precio: ₡23.990 → ₡18.000",
+            "Categoría: liner → jackets"
+          ],
+          "user": "admin"
+        }
+      ],
+      "active": false
+    },
+    {
+      "id": 1760808004406,
+      "name": "Aero-Tec 2.0 Cortech Jkt Black",
+      "price": 179990,
+      "category": "jackets",
+      "brand": "cortech",
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "description": "No impermeable térmica con protecciones Armanox",
+      "image": "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/products/product_items/Cortech-AEROTEC-Jacket-Blk-Front1706661434-16463341720570258-428202.png",
+      "images": [
+        "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/products/product_items/Cortech-AEROTEC-Jacket-Blk-Front1706661434-16463341720570258-428202.png"
+      ],
+      "active": true,
+      "createdAt": "2025-10-18T17:20:04.407Z",
+      "lastModified": "2025-11-03T17:28:10.538Z",
+      "views": 3,
+      "inquiries": 0,
+      "modificationHistory": [
+        {
+          "date": "2025-10-18T17:20:04.407Z",
+          "changes": [
+            "Producto creado"
+          ],
+          "user": "admin"
+        },
+        {
+          "date": "2025-10-18T17:25:31.292Z",
+          "changes": [
+            "Descripción actualizada",
+            "Imagen actualizada"
+          ],
+          "user": "admin"
+        },
+        {
+          "date": "2025-10-29T19:20:26.604Z",
+          "changes": [
+            "Imagen actualizada"
+          ],
+          "user": "admin"
+        },
+        {
+          "date": "2025-11-03T17:28:10.538Z",
+          "changes": [
+            "Descripción actualizada"
+          ],
+          "user": "admin"
+        }
+      ],
+      "lastViewed": "2025-10-23T23:40:33.443Z",
+      "importedAt": "2025-10-29T15:23:13.913Z"
+    },
+    {
+      "id": 1761861408764,
+      "name": "Asistente de Acelerador",
+      "price": 1200,
+      "category": "otros",
+      "brand": "n/a",
+      "sizes": [
+        "Único"
+      ],
+      "description": "Asistente de acelerador para descansar la muñeca",
+      "image": "https://m.media-amazon.com/images/I/6144QuQRgNL.jpg",
+      "images": [
+        "https://m.media-amazon.com/images/I/6144QuQRgNL.jpg"
+      ],
+      "active": true,
+      "createdAt": "2025-10-30T21:56:48.764Z",
+      "lastModified": "2025-11-03T17:28:29.802Z",
+      "views": 0,
+      "inquiries": 0,
+      "modificationHistory": [
+        {
+          "date": "2025-10-30T21:56:48.764Z",
+          "changes": [
+            "Producto creado"
+          ],
+          "user": "admin"
+        },
+        {
+          "date": "2025-11-03T17:28:29.802Z",
+          "changes": [
+            "Descripción actualizada"
+          ],
+          "user": "admin"
+        }
+      ]
+    },
+    {
+      "id": 1761861587133,
+      "name": "Capa Impermeable",
+      "price": 45000,
+      "category": "capas",
+      "brand": "n/a",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "description": "Capas de nylon con tafetta de costurero nacional",
+      "image": "https://almacenrojovivo.com/wp-content/uploads/2023/06/5284852626.jpg",
+      "images": [
+        "https://almacenrojovivo.com/wp-content/uploads/2023/06/5284852626.jpg"
+      ],
+      "active": true,
+      "createdAt": "2025-10-30T21:59:47.133Z",
+      "lastModified": "2025-11-03T17:28:52.898Z",
+      "views": 0,
+      "inquiries": 0,
+      "modificationHistory": [
+        {
+          "date": "2025-10-30T21:59:47.133Z",
+          "changes": [
+            "Producto creado"
+          ],
+          "user": "admin"
+        },
+        {
+          "date": "2025-11-03T17:28:52.898Z",
+          "changes": [
+            "Descripción actualizada"
+          ],
+          "user": "admin"
+        }
+      ]
+    },
+    {
+      "id": 1761861870693,
+      "name": "Pantalón de Capa",
+      "price": 20000,
+      "category": "capas",
+      "brand": "n/a",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "description": "Nylon con Tafetta de calidad nacional",
+      "image": "https://givancr.com/wp-content/uploads/2022/08/PANTALON-CAPA-300x300.jpg",
+      "images": [
+        "https://givancr.com/wp-content/uploads/2022/08/PANTALON-CAPA-300x300.jpg"
+      ],
+      "active": true,
+      "createdAt": "2025-10-30T22:04:30.693Z",
+      "lastModified": "2025-11-03T17:29:12.410Z",
+      "views": 0,
+      "inquiries": 0,
+      "modificationHistory": [
+        {
+          "date": "2025-10-30T22:04:30.693Z",
+          "changes": [
+            "Producto creado"
+          ],
+          "user": "admin"
+        },
+        {
+          "date": "2025-11-03T17:29:12.410Z",
+          "changes": [
+            "Descripción actualizada"
+          ],
+          "user": "admin"
+        }
+      ]
+    },
+    {
+      "id": 1761861976693,
+      "name": "Capa Impermeable WOMAN",
+      "price": 45000,
+      "category": "capas",
+      "brand": "n/a",
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "description": "Capa Impermeable Femenina",
+      "image": "https://motorepuestoscalleblancos.com/cdn/shop/files/01.png?v=1693005266.jpg",
+      "images": [
+        "https://motorepuestoscalleblancos.com/cdn/shop/files/01.png?v=1693005266.jpg"
+      ],
+      "active": true,
+      "createdAt": "2025-10-30T22:06:16.693Z",
+      "lastModified": "2025-11-03T19:03:26.784Z",
+      "views": 3,
+      "inquiries": 0,
+      "modificationHistory": [
+        {
+          "date": "2025-10-30T22:06:16.693Z",
+          "changes": [
+            "Producto creado"
+          ],
+          "user": "admin"
+        },
+        {
+          "date": "2025-10-30T22:07:05.589Z",
+          "changes": [
+            "Producto actualizado"
+          ],
+          "user": "admin"
+        },
+        {
+          "date": "2025-11-03T19:03:26.784Z",
+          "changes": [
+            "Descripción actualizada",
+            "Imagen actualizada"
+          ],
+          "user": "admin"
+        }
+      ],
+      "lastViewed": "2025-11-03T19:04:12.749Z"
+    },
+    {
+      "id": 1762190701362,
+      "name": "Bokken Noru (Japón)",
+      "price": 835000,
+      "category": "jackets",
+      "brand": "noru",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "description": "Semi Impermeable Térmmica con protecciones CE Lvl 1",
+      "image": "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/images/products/images/7348-2105-03fntanglweb1649282226-28018.jpg",
+      "images": [
+        "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/images/products/images/7348-2105-03fntanglweb1649282226-28018.jpg"
+      ],
+      "active": true,
+      "createdAt": "2025-11-03T17:25:01.362Z",
+      "lastModified": "2025-11-03T17:25:01.362Z",
+      "views": 1,
+      "inquiries": 0,
+      "modificationHistory": [
+        {
+          "date": "2025-11-03T17:25:01.362Z",
+          "changes": [
+            "Producto creado"
+          ],
+          "user": "admin"
+        }
+      ],
+      "lastViewed": "2025-11-03T19:04:15.381Z"
+    },
+    {
+      "id": 1762191020610,
+      "name": "Ganjo Noru Sand",
+      "price": 42000,
+      "category": "jackets",
+      "brand": "noru",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "description": "Mesh no impermeable con protecciones.",
+      "image": "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/images/products/list_image/7350-2106-03web1649282860-28428.jpg",
+      "images": [
+        "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/images/products/list_image/7350-2106-03web1649282860-28428.jpg"
+      ],
+      "active": true,
+      "createdAt": "2025-11-03T17:30:20.610Z",
+      "lastModified": "2025-11-03T17:30:20.610Z",
+      "views": 0,
+      "inquiries": 0,
+      "modificationHistory": [
+        {
+          "date": "2025-11-03T17:30:20.610Z",
+          "changes": [
+            "Producto creado"
+          ],
+          "user": "admin"
+        }
+      ]
+    },
+    {
+      "id": 1762191111555,
+      "name": "Bosui de Noru",
+      "price": 72000,
+      "category": "jackets",
+      "brand": "noru",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "description": "Dominate any terrain with the Bosui Adventure Jacket, crafted for durability and versatility.",
+      "image": "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/products/product_items/product1/product1_7358-2105-03fntweb1631210947-39081691681722-1369824.jpg",
+      "images": [
+        "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/products/product_items/product1/product1_7358-2105-03fntweb1631210947-39081691681722-1369824.jpg"
+      ],
+      "active": true,
+      "createdAt": "2025-11-03T17:31:51.555Z",
+      "lastModified": "2025-11-03T17:31:51.555Z",
+      "views": 0,
+      "inquiries": 0,
+      "modificationHistory": [
+        {
+          "date": "2025-11-03T17:31:51.555Z",
+          "changes": [
+            "Producto creado"
+          ],
+          "user": "admin"
+        }
+      ]
+    },
+    {
+      "id": 1762191213091,
+      "name": "Mariner Gray Blk Jkt",
+      "price": 149000,
+      "category": "jackets",
+      "brand": "tourmaster",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "description": "Reinforced 1680 denier in critical elbow and lower arm areas for enhanced abrasion resistance",
+      "image": "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/products/product_items/MarinerLaminatedJacketBlack1693930586-410711.jpg",
+      "images": [
+        "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/products/product_items/MarinerLaminatedJacketBlack1693930586-410711.jpg"
+      ],
+      "active": true,
+      "createdAt": "2025-11-03T17:33:33.091Z",
+      "lastModified": "2025-11-03T17:33:33.091Z",
+      "views": 0,
+      "inquiries": 0,
+      "modificationHistory": [
+        {
+          "date": "2025-11-03T17:33:33.091Z",
+          "changes": [
+            "Producto creado"
+          ],
+          "user": "admin"
+        }
+      ]
+    },
+    {
+      "id": 1762191322379,
+      "name": "Mariner Hi Viz by Tourmaster",
+      "price": 149000,
+      "category": "jackets",
+      "brand": "tourmaster",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "description": "Reinforced 1680 denier in critical elbow and lower arm areas for enhanced abrasion resistance",
+      "image": "data:image/jpeg;base64,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",
+      "images": [
+        "data:image/jpeg;base64,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"
+      ],
+      "active": true,
+      "createdAt": "2025-11-03T17:35:22.379Z",
+      "lastModified": "2025-11-03T17:35:22.379Z",
+      "views": 0,
+      "inquiries": 0,
+      "modificationHistory": [
+        {
+          "date": "2025-11-03T17:35:22.379Z",
+          "changes": [
+            "Producto creado"
+          ],
+          "user": "admin"
+        }
+      ]
+    },
+    {
+      "id": 1762191375467,
+      "name": "Mariner Blk Jkt",
+      "price": 149000,
+      "category": "jackets",
+      "brand": "tourmaster",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "description": "Reinforced 1680 denier in critical elbow and lower arm areas for enhanced abrasion resistance",
+      "image": "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/products/product_items/product1/product1_8811-0105-04web1664583259-33611591690222117-317837.jpg",
+      "images": [
+        "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/products/product_items/product1/product1_8811-0105-04web1664583259-33611591690222117-317837.jpg"
+      ],
+      "active": true,
+      "createdAt": "2025-11-03T17:36:15.467Z",
+      "lastModified": "2025-11-03T17:36:15.467Z",
+      "views": 0,
+      "inquiries": 0,
+      "modificationHistory": [
+        {
+          "date": "2025-11-03T17:36:15.467Z",
+          "changes": [
+            "Producto creado"
+          ],
+          "user": "admin"
+        }
+      ]
+    },
+    {
+      "id": 1762191462019,
+      "name": "Ridgecrest Men Jkt",
+      "price": 149000,
+      "category": "jackets",
+      "brand": "tourmaster",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "description": "Mesh con capa impermeable y chaleco térmico",
+      "image": "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/products/product_items/8803-0105-041619108467-281291692638778-2233408.jpg",
+      "images": [
+        "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/products/product_items/8803-0105-041619108467-281291692638778-2233408.jpg"
+      ],
+      "active": true,
+      "createdAt": "2025-11-03T17:37:42.019Z",
+      "lastModified": "2025-11-03T17:37:42.019Z",
+      "views": 0,
+      "inquiries": 0,
+      "modificationHistory": [
+        {
+          "date": "2025-11-03T17:37:42.019Z",
+          "changes": [
+            "Producto creado"
+          ],
+          "user": "admin"
+        }
+      ]
+    },
+    {
+      "id": 1762191584659,
+      "name": "Alpine Trek Tourmaster",
+      "price": 162000,
+      "category": "jackets",
+      "brand": "tourmaster",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "description": "Impermeable Touring",
+      "image": "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/products/product_items/8801-0105-041695319465-1381035.jpg",
+      "images": [
+        "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/products/product_items/8801-0105-041695319465-1381035.jpg"
+      ],
+      "active": true,
+      "createdAt": "2025-11-03T17:39:44.659Z",
+      "lastModified": "2025-11-03T17:39:44.659Z",
+      "views": 0,
+      "inquiries": 0,
+      "modificationHistory": [
+        {
+          "date": "2025-11-03T17:39:44.659Z",
+          "changes": [
+            "Producto creado"
+          ],
+          "user": "admin"
+        }
+      ]
+    },
+    {
+      "id": 1762191768388,
+      "name": "Transition by Tourmaster Woman Jacket",
+      "price": 114500,
+      "category": "jackets",
+      "brand": "tourmaster",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "description": "Impermeable",
+      "image": "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/products/product_items/TM_transition_jacket_womens_black_8777-0605-731612309903-494251693333779-103200.jpg",
+      "images": [
+        "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/products/product_items/TM_transition_jacket_womens_black_8777-0605-731612309903-494251693333779-103200.jpg"
+      ],
+      "active": true,
+      "createdAt": "2025-11-03T17:42:48.388Z",
+      "lastModified": "2025-11-03T17:42:48.388Z",
+      "views": 1,
+      "inquiries": 0,
+      "modificationHistory": [
+        {
+          "date": "2025-11-03T17:42:48.388Z",
+          "changes": [
+            "Producto creado"
+          ],
+          "user": "admin"
+        }
+      ],
+      "lastViewed": "2025-11-03T19:04:33.405Z"
+    },
+    {
+      "id": 1762191833643,
+      "name": "Ridgecrest Tourmaster Gray",
+      "price": 149000,
+      "category": "jackets",
+      "brand": "tourmaster",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "description": "Impermeable mesh térmico.",
+      "image": "https://content.motosport.com/images/items/large/TTR/TTR1WVP/X004.jpg",
+      "images": [
+        "https://content.motosport.com/images/items/large/TTR/TTR1WVP/X004.jpg"
+      ],
+      "active": true,
+      "createdAt": "2025-11-03T17:43:53.643Z",
+      "lastModified": "2025-11-03T17:43:53.643Z",
+      "views": 0,
+      "inquiries": 0,
+      "modificationHistory": [
+        {
+          "date": "2025-11-03T17:43:53.643Z",
+          "changes": [
+            "Producto creado"
+          ],
+          "user": "admin"
+        }
+      ]
+    },
+    {
+      "id": 1762191921164,
+      "name": "Ridgedcrest Tourmaster Black",
+      "price": 149000,
+      "category": "jackets",
+      "brand": "tourmaster",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "description": "Impermeable mesh Térmico.",
+      "image": "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/products/product_items/product1/product1_ridgecrest-jacket-black-black1708111722-2678717.jpg",
+      "images": [
+        "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/products/product_items/product1/product1_ridgecrest-jacket-black-black1708111722-2678717.jpg"
+      ],
+      "active": true,
+      "createdAt": "2025-11-03T17:45:21.164Z",
+      "lastModified": "2025-11-03T17:45:21.164Z",
+      "views": 0,
+      "inquiries": 0,
+      "modificationHistory": [
+        {
+          "date": "2025-11-03T17:45:21.164Z",
+          "changes": [
+            "Producto creado"
+          ],
+          "user": "admin"
+        }
+      ]
+    },
+    {
+      "id": 1762191974572,
+      "name": "Ganjo Noru Blk",
+      "price": 42000,
+      "category": "jackets",
+      "brand": "noru",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "description": "No impermeable",
+      "image": "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/products/product_items/7350-2105-03web1649282777-284281691687437-1373901.jpg",
+      "images": [
+        "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/products/product_items/7350-2105-03web1649282777-284281691687437-1373901.jpg"
+      ],
+      "active": true,
+      "createdAt": "2025-11-03T17:46:14.572Z",
+      "lastModified": "2025-11-03T17:46:14.572Z",
+      "views": 0,
+      "inquiries": 0,
+      "modificationHistory": [
+        {
+          "date": "2025-11-03T17:46:14.572Z",
+          "changes": [
+            "Producto creado"
+          ],
+          "user": "admin"
+        }
+      ]
+    },
+    {
+      "id": 1762192036268,
+      "name": "Ganjo Noru Gray",
+      "price": 42000,
+      "category": "jackets",
+      "brand": "noru",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "description": "No impermeable mesh",
+      "image": "https://richmondhondahouse.com/wp-content/uploads/2022/10/7350-2107-03fntangl.jpg",
+      "images": [
+        "https://richmondhondahouse.com/wp-content/uploads/2022/10/7350-2107-03fntangl.jpg"
+      ],
+      "active": true,
+      "createdAt": "2025-11-03T17:47:16.268Z",
+      "lastModified": "2025-11-03T17:47:16.268Z",
+      "views": 0,
+      "inquiries": 0,
+      "modificationHistory": [
+        {
+          "date": "2025-11-03T17:47:16.268Z",
+          "changes": [
+            "Producto creado"
+          ],
+          "user": "admin"
+        }
+      ]
+    },
+    {
+      "id": 1762192597868,
+      "name": "Discovery Blk Tourmaster",
+      "price": 133150,
+      "category": "jackets",
+      "brand": "tourmaster",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "description": "Impermeable Térmica",
+      "image": "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/products/product_items/product1/product1_Discovery%20Jacket_8738-0055-04_21735606177-36140941735606177-3614094.jpg",
+      "images": [
+        "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/products/product_items/product1/product1_Discovery%20Jacket_8738-0055-04_21735606177-36140941735606177-3614094.jpg"
+      ],
+      "active": true,
+      "createdAt": "2025-11-03T17:56:37.868Z",
+      "lastModified": "2025-11-03T17:56:37.868Z",
+      "views": 0,
+      "inquiries": 0,
+      "modificationHistory": [
+        {
+          "date": "2025-11-03T17:56:37.868Z",
+          "changes": [
+            "Producto creado"
+          ],
+          "user": "admin"
+        }
+      ]
+    },
+    {
+      "id": 1762192655748,
+      "name": "Discovery Red Tourmaster",
+      "price": 133150,
+      "category": "jackets",
+      "brand": "tourmaster",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "description": "Impermeable Térmica",
+      "image": "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/products/product_items/product1/product1_Discovery%20Jacket_8738-0077-04_11735606212-36163181735606212-3616318.jpg",
+      "images": [
+        "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/products/product_items/product1/product1_Discovery%20Jacket_8738-0077-04_11735606212-36163181735606212-3616318.jpg"
+      ],
+      "active": true,
+      "createdAt": "2025-11-03T17:57:35.748Z",
+      "lastModified": "2025-11-03T17:57:35.748Z",
+      "views": 0,
+      "inquiries": 0,
+      "modificationHistory": [
+        {
+          "date": "2025-11-03T17:57:35.748Z",
+          "changes": [
+            "Producto creado"
+          ],
+          "user": "admin"
+        }
+      ]
+    },
+    {
+      "id": 1762192813141,
+      "name": "Hyper-Flo Air by Cortech",
+      "price": 103900,
+      "category": "jackets",
+      "brand": "cortech",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "description": "Mesh Impermeable",
+      "image": "https://motocityeg.com/wp-content/uploads/2025/08/0085_Cortech-Hyper-Flo-Air-Jacket-Red-Grey-2.png",
+      "images": [
+        "https://motocityeg.com/wp-content/uploads/2025/08/0085_Cortech-Hyper-Flo-Air-Jacket-Red-Grey-2.png"
+      ],
+      "active": true,
+      "createdAt": "2025-11-03T18:00:13.141Z",
+      "lastModified": "2025-11-03T18:00:13.141Z",
+      "views": 0,
+      "inquiries": 0,
+      "modificationHistory": [
+        {
+          "date": "2025-11-03T18:00:13.141Z",
+          "changes": [
+            "Producto creado"
+          ],
+          "user": "admin"
+        }
+      ]
+    },
+    {
+      "id": 1762192991612,
+      "name": "Hyper-Flo Air orange by Cortech",
+      "price": 103900,
+      "category": "jackets",
+      "brand": "cortech",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "description": "Mesh Impermeable",
+      "image": "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/products/product_items/productt/productt_cortech_hyperflo_mens_jacket_orange_grey_front1611160982-620671743186211-31776851743186211-3177685.jpg",
+      "images": [
+        "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/products/product_items/productt/productt_cortech_hyperflo_mens_jacket_orange_grey_front1611160982-620671743186211-31776851743186211-3177685.jpg"
+      ],
+      "active": true,
+      "createdAt": "2025-11-03T18:03:11.612Z",
+      "lastModified": "2025-11-03T18:03:11.612Z",
+      "views": 0,
+      "inquiries": 0,
+      "modificationHistory": [
+        {
+          "date": "2025-11-03T18:03:11.612Z",
+          "changes": [
+            "Producto creado"
+          ],
+          "user": "admin"
+        }
+      ]
+    },
+    {
+      "id": 1762193146317,
+      "name": "Draft Red by Tourmaster",
+      "price": 89000,
+      "category": "jackets",
+      "brand": "tourmaster",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "description": "Mesh no impermeable",
+      "image": "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/products/product_items/Tourmaster-DRAFT-Air-Jacket-Blk-Red-Front1706545711-1581783.png",
+      "images": [
+        "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/products/product_items/Tourmaster-DRAFT-Air-Jacket-Blk-Red-Front1706545711-1581783.png"
+      ],
+      "active": true,
+      "createdAt": "2025-11-03T18:05:46.317Z",
+      "lastModified": "2025-11-03T18:05:46.317Z",
+      "views": 0,
+      "inquiries": 0,
+      "modificationHistory": [
+        {
+          "date": "2025-11-03T18:05:46.317Z",
+          "changes": [
+            "Producto creado"
+          ],
+          "user": "admin"
+        }
+      ]
+    },
+    {
+      "id": 1762193274581,
+      "name": "Draft gray by Tourmaster",
+      "price": 89000,
+      "category": "jackets",
+      "brand": "tourmaster",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "description": "Mesh no impermeable",
+      "image": "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/products/product_items/Tourmaster-DRAFT-Air-Jacket-Gry-Front1706545685-1581804.png",
+      "images": [
+        "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/products/product_items/Tourmaster-DRAFT-Air-Jacket-Gry-Front1706545685-1581804.png"
+      ],
+      "active": true,
+      "createdAt": "2025-11-03T18:07:54.581Z",
+      "lastModified": "2025-11-03T18:07:54.581Z",
+      "views": 0,
+      "inquiries": 0,
+      "modificationHistory": [
+        {
+          "date": "2025-11-03T18:07:54.581Z",
+          "changes": [
+            "Producto creado"
+          ],
+          "user": "admin"
+        }
+      ]
+    },
+    {
+      "id": 1762193342965,
+      "name": "Draft Blk by Tourmaster",
+      "price": 89000,
+      "category": "jackets",
+      "brand": "tourmaster",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "description": "Mesh no impermeable",
+      "image": "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/products/product_items/Tourmaster-DRAFT-Air-Jacket-Blk-Front1706545661-1581813.png",
+      "images": [
+        "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/products/product_items/Tourmaster-DRAFT-Air-Jacket-Blk-Front1706545661-1581813.png"
+      ],
+      "active": true,
+      "createdAt": "2025-11-03T18:09:02.965Z",
+      "lastModified": "2025-11-03T18:09:02.965Z",
+      "views": 0,
+      "inquiries": 0,
+      "modificationHistory": [
+        {
+          "date": "2025-11-03T18:09:02.965Z",
+          "changes": [
+            "Producto creado"
+          ],
+          "user": "admin"
+        }
+      ]
+    },
+    {
+      "id": 1762194461862,
+      "name": "Velocity Women by Joe Rocket",
+      "price": 89300,
+      "category": "jackets",
+      "brand": "joerocket",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "description": "Mesh impermeable",
+      "image": "https://i5.walmartimages.com/seo/Joe-Rocket-Velocity-Women-s-Pink-Black-Mesh-Jacket-1-Diva_b3c93b80-712f-4868-9c95-7103448862dd_1.4ccc8f87229a3d7f27dafbd9dbce6106.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF.jpg",
+      "images": [
+        "https://i5.walmartimages.com/seo/Joe-Rocket-Velocity-Women-s-Pink-Black-Mesh-Jacket-1-Diva_b3c93b80-712f-4868-9c95-7103448862dd_1.4ccc8f87229a3d7f27dafbd9dbce6106.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF.jpg"
+      ],
+      "active": true,
+      "createdAt": "2025-11-03T18:27:41.862Z",
+      "lastModified": "2025-11-03T18:27:41.862Z",
+      "views": 0,
+      "inquiries": 0,
+      "modificationHistory": [
+        {
+          "date": "2025-11-03T18:27:41.862Z",
+          "changes": [
+            "Producto creado"
+          ],
+          "user": "admin"
+        }
+      ]
+    },
+    {
+      "id": 1762194653143,
+      "name": "Aero-Flo Red by Cortech",
+      "price": 91600,
+      "category": "jackets",
+      "brand": "cortech",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "description": "Mesh Impermeable",
+      "image": "https://cdn11.bigcommerce.com/s-r8o1qp/images/stencil/original/products/6178/57381/cortech-aero-flo-air-jacket-black-red-front__44929.1675816763.jpg?c=2&imbypass=on&imbypass=on.jpg",
+      "images": [
+        "https://cdn11.bigcommerce.com/s-r8o1qp/images/stencil/original/products/6178/57381/cortech-aero-flo-air-jacket-black-red-front__44929.1675816763.jpg?c=2&imbypass=on&imbypass=on.jpg"
+      ],
+      "active": true,
+      "createdAt": "2025-11-03T18:30:53.143Z",
+      "lastModified": "2025-11-03T18:30:53.143Z",
+      "views": 0,
+      "inquiries": 0,
+      "modificationHistory": [
+        {
+          "date": "2025-11-03T18:30:53.143Z",
+          "changes": [
+            "Producto creado"
+          ],
+          "user": "admin"
+        }
+      ]
+    },
+    {
+      "id": 1762194872118,
+      "name": "Aero-Flo Air V2 Gray by Cortech",
+      "price": 103500,
+      "category": "jackets",
+      "brand": "cortech",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "description": "Mesh Impermeable",
+      "image": "https://richmondhondahouse.com/wp-content/uploads/2024/03/cortech-aeroflo-2.0-jckt-blkgry-1.jpg",
+      "images": [
+        "https://richmondhondahouse.com/wp-content/uploads/2024/03/cortech-aeroflo-2.0-jckt-blkgry-1.jpg"
+      ],
+      "active": true,
+      "createdAt": "2025-11-03T18:34:32.118Z",
+      "lastModified": "2025-11-03T18:34:32.118Z",
+      "views": 0,
+      "inquiries": 0,
+      "modificationHistory": [
+        {
+          "date": "2025-11-03T18:34:32.118Z",
+          "changes": [
+            "Producto creado"
+          ],
+          "user": "admin"
+        }
+      ]
+    },
+    {
+      "id": 1762195452071,
+      "name": "Phoenix 6.0 Hi Viz by Joe Rocket",
+      "price": 97400,
+      "category": "jackets",
+      "brand": "joerocket",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "description": "Nuevo!!!!!",
+      "image": "https://m.media-amazon.com/images/I/71bGyIEjMBL._AC_UY1000_.jpg",
+      "images": [
+        "https://m.media-amazon.com/images/I/71bGyIEjMBL._AC_UY1000_.jpg"
+      ],
+      "active": true,
+      "createdAt": "2025-11-03T18:44:12.071Z",
+      "lastModified": "2025-11-03T18:44:12.071Z",
+      "views": 0,
+      "inquiries": 0,
+      "modificationHistory": [
+        {
+          "date": "2025-11-03T18:44:12.071Z",
+          "changes": [
+            "Producto creado"
+          ],
+          "user": "admin"
+        }
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": "jackets",
+      "name": "Jackets",
+      "active": true,
+      "importedAt": "2025-10-29T15:23:13.913Z"
+    },
+    {
+      "id": "guantes",
+      "name": "Guantes",
+      "active": true,
+      "importedAt": "2025-10-29T15:23:13.913Z"
+    },
+    {
+      "id": "pantalones",
+      "name": "Pantalones",
+      "active": true,
+      "importedAt": "2025-10-29T15:23:13.913Z"
+    },
+    {
+      "id": "rodilleras",
+      "name": "Rodilleras",
+      "active": true,
+      "importedAt": "2025-10-29T15:23:13.913Z"
+    },
+    {
+      "id": "protecciones",
+      "name": "Protecciones",
+      "active": false,
+      "importedAt": "2025-10-29T15:23:13.913Z"
+    },
+    {
+      "id": "maletines",
+      "name": "Maletines para Moto",
+      "active": true,
+      "importedAt": "2025-10-29T15:23:13.913Z"
+    },
+    {
+      "id": "liner",
+      "name": "Forro interno",
+      "active": false,
+      "importedAt": "2025-10-29T15:23:13.913Z"
+    },
+    {
+      "id": "hidden",
+      "name": "Productos Eliminados",
+      "active": false,
+      "importedAt": "2025-10-29T15:23:13.913Z"
+    },
+    {
+      "id": "otros",
+      "name": "Otros",
+      "active": true
+    },
+    {
+      "id": "capas",
+      "name": "Capas",
+      "active": true
+    },
+    {
+      "id": "casco",
+      "name": "Cascos",
+      "active": true
+    },
+    {
+      "id": "intercomunicadores",
+      "name": "Intercomunicadores",
+      "active": true
+    },
+    {
+      "id": "calzado",
+      "name": "Calzado",
+      "active": true
+    }
+  ],
+  "brands": [
+    {
+      "id": "cortech",
+      "name": "Cortech",
+      "description": "Street Gear... Sport Motorcycle",
+      "logo": "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/cortech/cortech_header_logo.svg",
+      "active": true,
+      "importedAt": "2025-10-29T15:23:13.913Z"
+    },
+    {
+      "id": "alpinestars",
+      "name": "Alpinestars",
+      "description": "Premium Protection... Speed Experience",
+      "logo": "data:image/png;base64,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",
+      "active": true,
+      "importedAt": "2025-10-29T15:23:13.913Z"
+    },
+    {
+      "id": "tourmaster",
+      "name": "TourMaster",
+      "description": "Equipamiento Touring para grandes Aventuras",
+      "logo": "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/tourmaster/tourmaster_logo_on-light.svg",
+      "active": true,
+      "importedAt": "2025-10-29T15:23:13.913Z"
+    },
+    {
+      "id": "noru",
+      "name": "Noru",
+      "description": "Innovación y Diseño Japonés",
+      "logo": "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/noru/noru_1color_black_web.svg",
+      "active": true,
+      "importedAt": "2025-10-29T15:23:13.913Z"
+    },
+    {
+      "id": "joerocket",
+      "name": "Joe Rocket",
+      "description": "Gigante en USA",
+      "logo": "https://images.squarespace-cdn.com/content/v1/576c713e03596ed61e897dc6/1540834635957-7J0YC0GHIPK9YJXWUBUH/Rocket-Color-Logo.png?format=500w",
+      "active": true
+    },
+    {
+      "id": "fox",
+      "name": "Fox",
+      "description": "Pasión por las carreteras",
+      "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAilBMVEX///8AAADz8/Pt7e1+fn6DhIR0dHT4+PhxcXG4uLj29vZ7e3v8/Pzo6OhLS0vu7u4aGhpQUFDY2NihoaGZmZnNzc1eXl5XV1fHx8evr68kJCQuLi7h4eHV1dWpqalhYWFEREQ8PDycnJyPj48sLCwRERG/v79qamo/Pz8lJSUcHBy1tbYNDQ01NTVceu4IAAAMzElEQVR4nO2baXuyvBKADS64sCiKKwoWFdf///dOZhIkwaDxPc+X9pr7Q1sxhEwyWya01SIIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAI4q8Qbb3vb3K2y27R73zg1voZfWjSTayely/6vf/ImnEOo5vdg4B2PJvf2b8jsnjm7l88aNPdfn6SG+f75x3/SMzCQsLi/+j/zorVaCP+3uzePycaHeVd+85qznKn/Ranw9jYD981Cf0rSy0kfFi1MuJlffjlLvMM5R00N13uUbh1sUO98ln2qXPe5fxDk4ix2edR+oxNP7cyM5k8/0xmYJOpY264PIN4j1n0dEtz1n7fd8g+D4wbmIVxnKxaGekdXe4XZwMfP3lTPqZjbGgXLUC+ufjKi3c3/mvAlvBpexu8coJvYiYG5phaDG54NzcwC0/eZXc+zla76NtToG4MGHehLljh/oZdOQXO+zD0/STiJIkfOp7TQ4+A7tYbzOHDEFQnhwszk3WjcuZMDKzBEY6gDWOZxUKc2QJ+3b7yMCHIgzYg/dQB5xSHsz6qLe9rcJoLND5nNhYX+SJ541TMkgF0WaUZNjhCWOeEiWl6TyiNdfSNgCex+PzH8nmth91tTc3H2N6r1gvs63GGiydTe5gOj4mBeRfzEMCKV0yo+nv4ENE+Hl8IiP6ljVOdVVevqIfOYt7vdGc/O850lnd7xSR/Lm8J3Pl4wNWpaULAtkozTMxD2MPNfcYaPJsKV3c0wy8EFBM3BVUNtetvgkW8r3dwReMw6SCqLyy4J9bJBJrhhmWfBWwFDOfSqC0NHNF/BcHrbU3ByakJ8vQ0nqn/Fdwyl14kN48BXBuPc10LCWWr3WI+39S7WXd3U4W+vCziMI6w7ujQGN12EsXL5TKOkjbox4sqFrg2sJCeH9a/FJblPuerZtkpZjM+TPLNygy30m20DCOZ1mNNRxGjjVP9U5+URRFsxsrn8SboZ/VGYF8BhgKgq303Ehd5tiL8A/5VoWpJT/j0D3Ch/OrTQu3s9tJ4qUgY4cyYHMVHwAB9xc/PDRLCNZx6d69+e1KH82DnzwK2UuGVJB2lM0za3SeKhKilW9SQBj/wHggGI9b9mQFhq+bHxcqVutU+KF8d0FuvZoLczgwDdilSzjwXnypAgISNJagPO3bnsIf3XMMl+54RLmEJ+Ku2qtdM7DWXqFqRuseaD2HO1RU3pYh1noYECu6oDwq1JUJ9cJ0hx8EYlKAd6kZiB4xT8a15vZtjFeO0jAcXLFHX1G7HkB/Wl8tVWH+s3J3Bl9x7FnwnXxj0wcOhDb8XECaGB5li6bf9dnIVUVTThXFZMdDyLAy2mFum060Ttn3ftnzieR4POneYODUNRpF4/MiCIMhMbnmNmc3XO3VwMxAK5EJBLACBdJeFT4tV8xQJ09Ptzm2KFyoTNAfNDMHKKmthxQhRakBrVLf0SwHvkE8uWLXp5hF1Db87WrPiNNA87AQmxJkoV2ycTIUj44zaJ5jhMpuUBIhqBCm4glCdFBtQsmSsjLAnnfP8zV1dudzpCTc1J5jX4BsJY+GVtOzB2JBP9P2O9bXjQC7At6CI7U3lJryz3ES8pFRPVuJZc7/l70Zpf+q3osszcloxE2ahJSi+qSEXbuiBPs1Ra4LvC2ZjsTEJr1VlAWwBDK8x+ceGfT4N/hySJu4VCg823l+UJgKx5JqePAz3h6BQkJ3i/A/YwW/1vpKPa/ZErCIX6152Cy4czNMcegJINvwHF/DGHXAYhh53S2vYVX2qU1U4d/T87lHv+hIoLMA1cye/G8kZB42FhYzzNHhsNvtssggMejY+8+vZY/PYT/o/4ACXcl9+U3JMrkNn2f8LnZa46cwn4tZidx7ZfvifU+7j7kNbCbdizG+jN27muLOGzBUct7cwVRD8mrvIYrfeBKTAVGTCjs8v+zLZfUnkhQlCFLu1rjlXIm7++w1XtwDii3WlfSbyjLdZ9A80xJIg9juEWDUx9KXtIwweHUI8u8BfcZVHY+QzVhpQQAz8YcwHuWVZOplwF9HNIN+ylnDCNvDrbWgDqxQb+kEla1qVPMv8Qi1o9WrfcXuQ+1ncGo7lDHgQxzfwgOhVzUGIEOT2bgx6H/Tw5qwLCvWh4lohJtu7vpMQ2mFqVVb6BGl+w7On4V0mwYqql2YyQw33l6v8qcMyzRebFBALre1VR6GuDxPDfbgf81nOmdcaH33u5NqtgyhO2BAJdXlrhqiQmDOBJLXq0NRzF1yNcT+ppLYoxsDdwlwPztoduDN7sD6fV5isAyygrzd5iggL5Wy4W7pcw3iF45xz7Z1Ky7FBboJr0buTuAqoaGhj8Ee9fHTlXnh8Rf1VeolwUuC747p2AwQMF5zpFhSw86bixI0WVCHcsDaf11niDP0CLIXP5NHalaZiubVhHw2ZLe6twLZ881AwqCrxsWXWO6AvFOEETnIMWuG+cQIYSBx2cBxZKMqHuK06vQ7RDLd4WSFXMGU0qICwTo1Od6g6w6Kx1ikiIV80CMD4bH0jPel0NYEzFHENjjWKYz60LaTg9sdJiRi2Nho0oXyk0cHMHnybmuJrhGrmtXqTTMelzqzRq2r7wCnuq9pqSi8q0Gs2LnankzyvfK0iNbITK6bZAeioXuwtgcdvfeNpA6yhshhJ0xLe2uB+Uef7EPO1GFEdz6mRFT1TqCTBc2Pa3EAhzFBLMOECTz6OV07V7+JRpiFmS1x7Sv32UC8TaqNFE71i9qeVfJWqufeo3xQKh3XMclv5hjyNdfhtGJnViSxjQz/nnLyhhO9cpf8yr85E3UNzZ2I+U5E+TC6gr2rjWYTwW/Q6jWiuPobs4yN7dKwEfE7eqt4dpsRn7ROSgqnB/Pmz02n/MvaR6q5upmOozmoHvfnwcHSFmm2Ifb9TsLtIx7T4ha6hMnObzWF1P4xZs6xY66xKjviyLtMyk1DLVuVMKVmDbzj8LHVwki1T8I+h5ooy8SV4ahEI9EMNFNFfAPODOE76wIQd8i4CnzR3BiJ7PhKmSoKLM16+3gGaqm+AY6eKf5v2UC/mH6u6gy9lPenbNdkxnxg5ibVirJLCTNjlc6HN1XY/+v5aNeQNOJDqHhGtgYj79SEqwmLpR+Z6xmzrRxjact8dPEP0aIEOs1NvnTti9PLY4OXUaVWOw7F6jWarVgiHB60rZdeTaJ2FXbESoMYRFgGmZWQypLWZcEt9dsemJ/6xzfVhix1GhkQfpoBvx3GFXcOErZIoApOJFWmb+ZGH8W3fT3b1p2WzFQea3eSpekkASpseqguXcp5eD5GlKrjKPq7Yt/wHLJWxKBOKmccbX828moWZ1dZwIQr1b6qBuOnp1d4cW4H4aiXueb71ksBMX5qAP5veYfyu6VD9LGce58/4koaUftJQCtRwj6iLTkM/AK7dhl11mxb+A3eDuVzdCOegHt8f1VfcaaB35yr/k+KZuvGtATSO0gwXphby/J7ZvMUlT6+adAGAwfkvnTk4ODCljix2RcJS6/k4VgXuWLAAneRz4t9lfS02FyGXYvRoY00HIh0xdou0eyq0vkkXmHwjYvDamTsYbGAU4MsTORa4XiuU4aKNRJP2BfKG5VE64qY6ctgSDitpNby1wp57G4tS6VycFrwcQFfgAnWML3CCcAs48wOnAXsEv1V3ppjeTWc4JJT9vIefqzcPPZea0Hoz9W0c+9gi3otJ9rqNb9+OMHpdzDYtVoEnwvclCgZt9b0IhJCE8QlaYUAsY7t45cYMjrooD58bGsGgj8IJviex22A55pIhVyLuOVdeUI4dXxxRQw6mLxnjwuHVG9/ujWeZkjw0AJ18eE0VlMWiQjNtOJiocfrQGepSbyw0Wg080DnPSU64Y8lBLg/SzP67zoCEfQ51dq9cFmzjfgYiwPuj8iQNpmVip+wwf8RgNy2/2OdlOOR+edL9AGh050ObvVXaXVi/Z23x4lhaL9ZlcHX/4qQOjQ/5Ept3uxtrRHVsapJT4WoqBw/ydl/fAUss3g4MGt7y+lZAbq4dq/9AsHirCtMG7a2FqbhmOKRtcJCar2zyok+sy6T/DkdKI50peF/vbufKfguBMFfpasCzpFb7m99DLlyuKLqASe5sjeW3IA0R3RekSjwmry0c+m9CvhPzEAYJLsf+H6F+B4UQKWdrMMLJHzNCQL5+EMIBNDgcu4Ltr+IiXgUAOlY78F/H9Fmb7Nr9H8uvwx2LhB9OOvd/zI1KYNv/s4Td1OI//Nfsr6DMmP+gkynBzdPe5s3rX4sXL/9anCcIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIwoL/AR8qyJmqyOqZAAAAAElFTkSuQmCC",
+      "active": true
+    },
+    {
+      "id": "n/a",
+      "name": "N/A",
+      "description": "n/a (empty)",
+      "logo": "data:image/svg+xml,%3Csvg width='120' height='80' viewBox='0 0 120 80'%3E%3Crect width='120' height='80' fill='%23dc2626' rx='10'/%3E%3Ctext x='60' y='45' text-anchor='middle' font-family='Arial' font-size='14' font-weight='bold' fill='white'%3EN%2FA%3C/text%3E%3C/svg%3E",
+      "active": true
+    },
+    {
+      "id": "shoei",
+      "name": "Shoei",
+      "description": "Cascos Japoneses de Gama Alta",
+      "logo": "https://d1o0i0v5q5lp8h.cloudfront.net/helmet/live/assets/shoei/24-01-09_shoei_logo_white.png",
+      "active": true
+    },
+    {
+      "id": "evs",
+      "name": "EVS",
+      "description": "Rodilleras Certificadas de Alta Calidad.",
+      "logo": "https://www.sport-orthese.com/img/m/25.jpg",
+      "active": true
+    },
+    {
+      "id": "gmax",
+      "name": "Gmax",
+      "description": "Tecnología y Seguridad en Cascos con Luz Trasera",
+      "logo": "https://cdn11.bigcommerce.com/s-9j7nxpn18v/stencil/3542ba30-8aa0-013e-5533-0ec7ca57b603/e/34e31a10-399d-013e-8541-16fd57af0c7f/img/gmax-logo.svg",
+      "active": true
+    }
+  ],
+  "theme": {
+    "background": {
+      "type": "image",
+      "value": "#9ca3af",
+      "gradient": "linear-gradient(135deg, #9ca3af 0%, #6b7280 100%)",
+      "image": "https://static.vecteezy.com/system/resources/previews/006/891/093/non_2x/abstract-gradient-background-dark-red-suitable-for-background-presentation-website-card-promotion-and-social-media-concept-vector.jpg"
+    },
+    "cardBackground": "#f3f4f6",
+    "primaryColor": "#ff0000",
+    "secondaryColor": "#000000",
+    "textColor": "#374151",
+    "buttonColor": "#dc2626",
+    "customLogo": "https://scontent.fsjo12-1.fna.fbcdn.net/v/t39.30808-6/574569292_807824935344324_3685266930212794469_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=UKpc5uACVmAQ7kNvwG0r7Gj&_nc_oc=AdnxYzbXg6nkcuKUnpY_lQ6kozkjhkkRS62H6-uiXoBQS91_1BhPNwTHXzwnm2bibak&_nc_zt=23&_nc_ht=scontent.fsjo12-1.fna&_nc_gid=sZ2nMvWm4ULr0dYSXhxL6Q&oh=00_AfgdEP3z1-w7GcPgVfRGtXWiTlZvWBpfe4mQZH6DF0dCgg&oe=690EC6D7",
+    "heroBackground": {
+      "type": "image",
+      "value": "",
+      "gradient": "linear-gradient(135deg, #374151 0%, #1f2937 100%)",
+      "image": "https://png.pngtree.com/background/20220731/original/pngtree-red-and-black-racing-background-picture-image_1911380.jpg",
+      "textBg": {
+        "image": "https://img.freepik.com/vector-gratis/fondo-oscuro-formas-hexagonales_1048-2713.jpg?semt=ais_hybrid&w=740&q=80",
+        "opacity": "10",
+        "size": "contain"
+      }
+    },
+    "importedAt": "2025-10-29T15:23:13.913Z",
+    "customFavicon": "https://scontent.fsjo12-1.fna.fbcdn.net/v/t39.30808-6/574569292_807824935344324_3685266930212794469_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=UKpc5uACVmAQ7kNvwG0r7Gj&_nc_oc=AdnxYzbXg6nkcuKUnpY_lQ6kozkjhkkRS62H6-uiXoBQS91_1BhPNwTHXzwnm2bibak&_nc_zt=23&_nc_ht=scontent.fsjo12-1.fna&_nc_gid=sZ2nMvWm4ULr0dYSXhxL6Q&oh=00_AfgdEP3z1-w7GcPgVfRGtXWiTlZvWBpfe4mQZH6DF0dCgg&oe=690EC6D7"
+  },
+  "texts": {
+    "heroTitle": "Equipo de Seguridad Premium para Motociclistas",
+    "heroSubtitle": " ",
+    "navInicio": "INICIO",
+    "navProductos": "CATÁLOGO",
+    "navContacto": "CONTACTO",
+    "productsTitle": "NUESTROS PRODUCTOS",
+    "brandsTitle": "NUESTRAS MARCAS",
+    "contactTitle": "CONTÁCTANOS",
+    "importedAt": "2025-10-29T15:23:13.913Z"
+  },
+  "links": {
+    "whatsappCatalog": {
+      "text": "WHATSAPP",
+      "url": "https://wa.me/c/50688845533"
+    },
+    "whatsappChannel": {
+      "text": "CANAL PROMOCIONES",
+      "url": "https://whatsapp.com/channel/0029VbBv0Wk59PwXaRqS6C2d"
+    },
+    "waze": {
+      "text": "ABRIR EN WAZE",
+      "url": "https://waze.com/ul/hd1u0rps2s"
+    }
+  },
+  "exportDate": "2025-11-03T23:09:44.128Z"
+}
