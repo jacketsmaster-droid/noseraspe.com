@@ -119,11 +119,9 @@ Sitio web completo para tienda de equipamiento motociclista con sistema de admin
 Para soporte técnico o personalizaciones, contacta al desarrollador.
 
 ## 📄 Licencia
-Este proyecto está bajo licencia MIT. Puedes usarlo libremente para proyectos comerciales.
+Este proyecto está bajo licencia MIT. 
 
 ---
-
-**Generado automáticamente el 3/11/2025**
 **Versión del sistema: 2.0**
 **Total de productos: 36**
 **Categorías activas: 10**
