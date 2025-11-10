@@ -374,55 +374,113 @@
         </div>
     </section>
 
-    <!-- Products Section -->
-    <section id="productos" class="py-20">
-        <div class="container mx-auto px-4">
-            <h2 class="section-title text-5xl text-center mb-16" id="productsTitle" contenteditable="false">NUESTROS PRODUCTOS</h2>
+<!-- Products Section -->
+<section id="productos" class="py-20">
+    <div class="container mx-auto px-4">
+        <h2 class="section-title text-5xl text-center mb-16" id="productsTitle" contenteditable="false">NUESTROS PRODUCTOS</h2>
+        
+        <!-- Search and Filters -->
+        <div class="glass-effect p-8 rounded-xl shadow-xl mb-12">
             
-            <!-- Search and Filters -->
-            <div class="glass-effect p-8 rounded-xl shadow-xl mb-12">
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-                    <div style="position: relative;">
-                        <label class="block text-lg font-bold mb-3 text-gray-800">BUSCAR:</label>
-                        <input type="text" id="searchInput" placeholder="Buscar productos..." class="w-full px-4 py-3 bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 text-lg" onkeyup="filterProducts()">
-                    <div id="searchSuggestions" class="absolute top-full left-0 right-0 bg-white border border-gray-300 rounded-b-lg shadow-lg z-10 hidden max-h-60 overflow-y-auto"></div></div>
-                    <div>
-                        <label class="block text-lg font-bold mb-3 text-gray-800">CATEGORÍA:</label>
-                        <select id="categoryFilter" class="w-full px-4 py-3 bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 text-lg" onchange="filterProducts()"><option value="">Todas las categorías</option><option value="jackets">Jackets</option><option value="guantes">Guantes</option><option value="pantalones">Pantalones</option><option value="rodilleras">Rodilleras</option><option value="maletines">Maletines para Moto</option><option value="hidden">Productos Eliminados</option><option value="otros">Otros</option><option value="capas">Capas</option><option value="casco">Cascos</option><option value="intercomunicadores">Intercomunicadores</option><option value="calzado">Calzado</option><option value="monotrajes">Monotrajes</option></select>
-                    </div>
-                    <div>
-                        <label class="block text-lg font-bold mb-3 text-gray-800">PRECIO:</label>
-                        <div class="space-y-3">
-                            <div class="flex justify-between text-sm text-gray-600">
-                                <span>₡0</span>
-                                <span>₡200,000+</span>
-                            </div>
-                            <div class="relative h-8 mb-4">
-                                <input type="range" id="minPrice" min="0" max="200000" value="0" step="5000" class="absolute w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer slider-thumb z-10" oninput="updatePriceRange()">
-                                <input type="range" id="maxPrice" min="0" max="200000" value="200000" step="5000" class="absolute w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer slider-thumb z-20" oninput="updatePriceRange()">
-                            </div>
-                            <div class="flex justify-between text-sm font-bold text-gray-800 mt-6">
-                                <span id="minPriceDisplay">₡0</span>
-                                <span id="maxPriceDisplay">₡200,000+</span>
-                            </div>
+            <!-- Primera fila de filtros -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                
+                <!-- BUSCAR -->
+                <div style="position: relative;">
+                    <label class="block text-lg font-bold mb-3 text-gray-800">BUSCAR:</label>
+                    <input type="text" id="searchInput" placeholder="Buscar productos..." 
+                           class="w-full px-4 py-3 bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 text-lg" 
+                           onkeyup="filterProducts()">
+                    <div id="searchSuggestions" 
+                         class="absolute top-full left-0 right-0 bg-white border border-gray-300 rounded-b-lg shadow-lg z-10 hidden max-h-60 overflow-y-auto"></div>
+                </div>
+
+                <!-- CATEGORÍA -->
+                <div>
+                    <label class="block text-lg font-bold mb-3 text-gray-800">CATEGORÍA:</label>
+                    <select id="categoryFilter" 
+                            class="w-full px-4 py-3 bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 text-lg" 
+                            onchange="filterProducts()">
+                        <option value="">Todas las categorías</option>
+                        <option value="jackets">Jackets</option>
+                        <option value="guantes">Guantes</option>
+                        <option value="pantalones">Pantalones</option>
+                        <option value="rodilleras">Rodilleras</option>
+                        <option value="maletines">Maletines para Moto</option>
+                        <option value="hidden">Productos Eliminados</option>
+                        <option value="otros">Otros</option>
+                        <option value="capas">Capas</option>
+                        <option value="casco">Cascos</option>
+                        <option value="intercomunicadores">Intercomunicadores</option>
+                        <option value="calzado">Calzado</option>
+                        <option value="monotrajes">Monotrajes</option>
+                    </select>
+                </div>
+
+                <!-- PRECIO -->
+                <div>
+                    <label class="block text-lg font-bold mb-3 text-gray-800">PRECIO:</label>
+                    <div class="space-y-3">
+                        <div class="flex justify-between text-sm text-gray-600">
+                            <span>₡0</span>
+                            <span>₡200,000+</span>
+                        </div>
+                        <div class="relative h-8 mb-4">
+                            <input type="range" id="minPrice" min="0" max="200000" value="0" step="5000" 
+                                   class="absolute w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer slider-thumb z-10" 
+                                   oninput="updatePriceRange()">
+                            <input type="range" id="maxPrice" min="0" max="200000" value="200000" step="5000" 
+                                   class="absolute w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer slider-thumb z-20" 
+                                   oninput="updatePriceRange()">
+                        </div>
+                        <div class="flex justify-between text-sm font-bold text-gray-800 mt-6">
+                            <span id="minPriceDisplay">₡0</span>
+                            <span id="maxPriceDisplay">₡200,000+</span>
                         </div>
                     </div>
-                    <div>
-                        
-                    </div>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-                    <div>
-                        <label class="block text-lg font-bold mb-3 text-gray-800">MARCA:</label>
-                        <select id="brandFilter" class="w-full px-4 py-3 bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 text-lg" onchange="filterProducts()"><option value="">Todas las marcas</option><option value="cortech">Cortech</option><option value="alpinestars">Alpinestars</option><option value="tourmaster">TourMaster</option><option value="noru">Noru</option><option value="joerocket">Joe Rocket</option><option value="fox">Fox</option><option value="n/a">N/A</option><option value="shoei">Shoei</option><option value="evs">EVS</option><option value="gmax">Gmax</option><option value="cardo">Cardo</option></select>
-                    </div>
-                    <div class="flex items-end">
-                        <button onclick="clearFilters()" class="w-full bg-gray-600 text-white py-3 rounded-lg hover:bg-gray-700 transition-colors font-bold text-lg">
-                            <i class="fas fa-refresh mr-2"></i>LIMPIAR FILTROS
-                        </button>
-                    </div>
+
+                <!-- (Vacío / Futura expansión si quieres otro filtro) -->
+                <div></div>
+
+            </div>
+
+            <!-- Segunda fila de filtros -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+
+                <!-- MARCA -->
+                <div>
+                    <label class="block text-lg font-bold mb-3 text-gray-800">MARCA:</label>
+                    <select id="brandFilter" 
+                            class="w-full px-4 py-3 bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 text-lg" 
+                            onchange="filterProducts()">
+                        <option value="">Todas las marcas</option>
+                        <option value="cortech">Cortech</option>
+                        <option value="alpinestars">Alpinestars</option>
+                        <option value="tourmaster">TourMaster</option>
+                        <option value="noru">Noru</option>
+                        <option value="joerocket">Joe Rocket</option>
+                        <option value="fox">Fox</option>
+                        <option value="n/a">N/A</option>
+                        <option value="shoei">Shoei</option>
+                        <option value="evs">EVS</option>
+                        <option value="gmax">Gmax</option>
+                        <option value="cardo">Cardo</option>
+                    </select>
+                </div>
+
+                <!-- LIMPIAR FILTROS -->
+                <div class="flex items-end">
+                    <button onclick="clearFilters()" 
+                            class="w-full bg-gray-600 text-white py-3 rounded-lg hover:bg-gray-700 transition-colors font-bold text-lg">
+                        <i class="fas fa-refresh mr-2"></i>LIMPIAR FILTROS
+                    </button>
                 </div>
             </div>
+
+        </div>
+    </div>
+</section>
 
             <!-- Products Grid -->
             <div id="productsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
