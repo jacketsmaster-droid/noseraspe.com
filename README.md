@@ -32,8 +32,8 @@ Sitio web completo para tienda de equipamiento motociclista con sistema de admin
 ## 🔧 Configuración
 
 ### Acceso de Administrador
-- **Usuario:** `jm`
-- **Contraseña:** `jm2024`
+- **Usuario:** `*****`
+- **Contraseña:** `l******`
 
 ### Personalización
 1. Accede al panel de administración
