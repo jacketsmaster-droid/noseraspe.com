@@ -23219,8 +23219,6 @@ Revestimiento de ...</p>
                         if (!product.price || product.price <= 0) errors.push(`Producto ${index + 1}: Precio inválido`);
                         if (!product.category) errors.push(`Producto ${index + 1}: Falta categoría`);
                         if (!product.brand) errors.push(`Producto ${index + 1}: Falta marca`);
-                        if (!product.sizes || !Array.isArray(product.sizes) || product.sizes.length === 0) {
-                            errors.push(`Producto ${index + 1}: Falta tallas válidas`);
                         }
                     });
                 }
