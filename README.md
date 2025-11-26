@@ -32,8 +32,8 @@ Sitio web completo para tienda de equipamiento motociclista con sistema de admin
 ## 🔧 Configuración
 
 ### Acceso de Administrador
-- **Usuario:** `*****`
-- **Contraseña:** `l******`
+- **Usuario:** `jm`
+- **Contraseña:** `jm2024`
 
 ### Personalización
 1. Accede al panel de administración
@@ -123,8 +123,8 @@ Este proyecto está bajo licencia MIT. Puedes usarlo libremente para proyectos c
 
 ---
 
-**Generado automáticamente el 24/11/2025**
+**Generado automáticamente el 26/11/2025**
 **Versión del sistema: 2.0**
-**Total de productos: 170**
+**Total de productos: 258**
 **Categorías activas: 11**
 **Marcas activas: 11**
